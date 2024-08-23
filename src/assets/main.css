@@ -1,0 +1,15 @@
+:root{
+  --cyber-blue: #1993D1;
+  --cyber-gold: #d35400
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+body{
+  margin: 0;
+}

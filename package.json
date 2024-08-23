@@ -1,0 +1,40 @@
+{
+  "name": "new_project",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force"
+  },
+  "dependencies": {
+    "@babel/core": "^7.23.5",
+    "@vitejs/plugin-legacy": "^5.4.1",
+    "element-plus": "^2.8.0",
+    "lodash": "^4.17.21",
+    "vue": "3.4.29",
+    "vue-facing-decorator": "^3.0.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.24.7",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/babel__core": "^7.20.5",
+    "@types/node": "^20.14.5",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/tsconfig": "^0.5.1",
+    "npm-run-all2": "^6.2.0",
+    "sass-embedded": "^1.77.8",
+    "typescript": "~5.4.0",
+    "unplugin-auto-import": "^0.18.2",
+    "unplugin-vue-components": "^0.27.4",
+    "vite": "^5.3.1",
+    "vue-tsc": "^2.0.21"
+  },
+  "engines": {
+    "node": ">=18.19.0",
+    "npm": ">=10.2.3"
+  }
+}
