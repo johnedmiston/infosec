@@ -59,6 +59,9 @@
   text-align: center;
   padding-top: 15px;
   margin-top: 0;
+  color: var(--cyber-blue);
+  border-bottom: 1px solid var(--cyber-blue);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 .links-main{
   width: 95%;
@@ -70,6 +73,7 @@
   .sub-category {
     h3{
       text-align: center;
+      color: var(--cyber-gold);
     }
   }
 }

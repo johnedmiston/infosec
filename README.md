@@ -1,3 +1,17 @@
+## Deployment
+  - Must be running node ">=18.19.0" and npm ">=10.2.3"
+
+  1. Pull git repository
+      - git clone https://github.com/johnedmiston/infosec.git
+  2. Enter cloned git repo
+      - `cd infosec`
+  3. Install Dependencies
+      - `npm install`
+  4. Create Build Directory
+      - `npm run build`
+  5. The new build `./infosec/dist/index.html` is where you will want to point the infosec url to.
+
+## Original Prompt
 This website needs a total rewrite:
 
 It is way too lengthy and needs to be broken up into topic-related pages with an easy to use nav bar and excellent navigation.
