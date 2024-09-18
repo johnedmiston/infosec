@@ -1,3 +1,7 @@
+## Deployment
+
+
+## Original Prompt
 This website needs a total rewrite:
 
 It is way too lengthy and needs to be broken up into topic-related pages with an easy to use nav bar and excellent navigation.
