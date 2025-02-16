@@ -35,33 +35,37 @@ The project directory structure is as follows:
     ``` bash
 
     /cybermissions 
-    │ ├── /assets       # Images and icons (Creative Commons or AI-generated) 
-    | ├── components
-    │ |    └── footer.html
-    │ |    └── header.html
-    | ├── /css          # CSS Styles 
-    │ |    └── cards.css
-    │ |    └── contact.css
-    │ |    └── header.css
-    │ |    └── main.css
-    │ |    └── styles.css
-    | ├── /images
-    │ |    └── logo.png 
-    │ ├── /js           # JavaScript Scripts 
-    │ └── form.js     # Form functionalities and interactivity 
-    │ └── load.js # Dynamic header and footer loading 
-    │ ├── /images # Images for the website 
-    │ └── backup-guide.jpg 
-    │ └── encryption.jpg 
-    │ ├── /pages # Website Pages 
-    │ └── home.html 
-    │ └── fundamentals.html 
-    │ └── backups.html 
-    │ └── threats.html 
-    │ └── encryption.html 
-    │ └── contact.html 
-    │ └── index.html # Homepage
-
+      ├── /assets               
+      |    ├── /components      
+      |    |    ├── footer.html 
+      |    |    └── header.html 
+      |    ├── /css             # CSS Styles 
+      |    |    ├── cards.css   
+      |    |    ├── contact.css 
+      |    |    ├── header.css  
+      |    |    ├── main.css    
+      |    |    └── styles.css  
+      |    ├── /images          # Images and icons (Creative Commons or AI-generated) 
+      |    |    ├── several images (...)
+      |    |    └── logo.png    
+      |    ├── /js              # JavaScript Scripts 
+      |    |    ├── cards.js    # Card functionalities and interactivity
+      |    |    ├── form.js     # Form functionalities and interactivity 
+      |    |    └── main.js     # Dynamic header and footer loading 
+      |    ├── file.json        
+      ├── /pages                # Website Pages 
+      |    ├── contact.html     
+      |    ├── cybercrimes.html 
+      |    ├── encryption.html   
+      |    ├── fundamentals.html 
+      |    ├── miscellaneous.html
+      |    ├── password.html    
+      |    ├── securing-hardware.html
+      |    └── security.html    
+      ├── index.html            # Homepage 
+      ├── infosec_website_old_code.zip  # Old website content
+      └── README.md             
+   
     ```
 
 ## How to Run the Project Locally
