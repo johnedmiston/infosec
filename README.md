@@ -73,7 +73,7 @@ The project directory structure is as follows:
 1. **Clone the repository:**
 
     ``` bash
-    git clone https://github.com/your-username/cybermissions.git
+    git clone https://github.com/johnedmiston/infosec
     ```
 
 2. **Open the project in a code editor:**
@@ -116,7 +116,7 @@ This website needs a total rewrite. Below is the list of tasks and their progres
 - [x] Design with an appropriate feel for churches, Christian non-profits, and small Christian businesses
 - [x] Add a contact form
 - [x] Link to our privacy policy (see front page of Cybermissions.Org)
-- [ ] Make the website responsive and mobile-friendly
+- [x] Make the website responsive and mobile-friendly
 - [ ] Ensure new links and items can be easily added later
 - [ ] Provide a multicultural feel, as we serve people worldwide
 
