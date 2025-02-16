@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #1993d1;
+    --secondary-color: #34495e;
+    --text-color: #ffffff;
+    --text-color2: #333;
+    --background-color: #f4f4f4;
+    --link-color: #3498db;
+    --hover-color: #FAB128;
+    --border-radius: 0.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color2);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+
+footer {
+    background: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 0.3rem 2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-link {
+    position: relative;
+    color: var(--text-color);
+    text-decoration: none;
+    overflow: hidden;
+    padding-bottom: 2px;
+    line-height: 1.2rem;
+}
+
+.footer-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--hover-color);
+    transition: width 0.2s ease-out, left 0.2s ease-out;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+}
