@@ -1,26 +1,10 @@
-# Cyber Mission
+# Cybermissions
 
-Cybermissions is a website dedicated to cybersecurity, developed for a Christian organization.
+Cybermissions is a website dedicated to cybersecurity, developed for a Christian organization. 
 
-The goal of the site is to provide information on best practices in cybersecurity, including topics like backups, cyber threats, encryption, security systems, and more.
+The goal of the site is to provide information on best practices in cybersecurity, including topics like backups, cyber threats, encryption, security systems, and more. 
 
 This project was developed as part of a volunteer role for an NGO, and all pages are responsive, optimized for accessibility, and follow best security practices.
-
-## Website Redesign Progress
-
-This website needs a total rewrite.
-
-Below is the list of tasks and their progress:
-
-- [x] Break content into topic-related pages with an easy-to-use nav bar
-- [x] Recode the website (originally in Adobe Muse, now in HTML, CSS, and JavaScript)
-- [x] Use only Creative Commons or AI-generated images with attribution
-- [x] Design with an appropriate feel for churches, Christian non-profits, and small Christian businesses
-- [x] Add a contact form
-- [x] Link to our privacy policy (see front page of Cybermissions.Org)
-- [ ] Make the website responsive and mobile-friendly
-- [ ] Ensure new links and items can be easily added later
-- [ ] Provide a multicultural feel, as we serve people worldwide
 
 ## Project Overview
 
@@ -85,9 +69,7 @@ The project directory structure is as follows:
 1. **Clone the repository:**
 
     ``` bash
-
     git clone https://github.com/your-username/cybermissions.git
-    
     ```
 
 2. **Open the project in a code editor:**
@@ -119,6 +101,20 @@ The contact page:
     Email: johned@cybermissions.org
     Phone: +1 -310-844-6948 (Google Voice)
     Address: P.O. Box 40 Rhoadesville, VA, 22542 (USA)
+
+## Website Redesign Progress
+
+This website needs a total rewrite. Below is the list of tasks and their progress:
+
+- [x] Break content into topic-related pages with an easy-to-use nav bar
+- [x] Recode the website (originally in Adobe Muse, now in HTML, CSS, and JavaScript)
+- [x] Use only Creative Commons or AI-generated images with attribution
+- [x] Design with an appropriate feel for churches, Christian non-profits, and small Christian businesses
+- [x] Add a contact form
+- [x] Link to our privacy policy (see front page of Cybermissions.Org)
+- [ ] Make the website responsive and mobile-friendly
+- [ ] Ensure new links and items can be easily added later
+- [ ] Provide a multicultural feel, as we serve people worldwide
 
 ## Contributing
 
