@@ -50,10 +50,9 @@
     border: 1px solid #ddd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 1rem;
     width: 45%;
     min-width: 280px;
-    height: 100px;
+    height: 120px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -64,47 +63,50 @@
 }
 
 .card img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    object-fit: contain;
+    background-color: #cac8c8;
 }
 
 .card-content {
     flex: 1;
-    padding-left: 1rem;
+    padding: 0 0.5rem;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.card h3 {
+.card .card-content h3 {
     font-size: 0.9rem;
     margin-bottom: 10px;
 }
 
-.card h3 a {
+.card .card-content h3 a {
     text-decoration: none;
-    color: #007BFF;
 }
 
-.card h3 a:hover {
+.card .card-content h3 a:hover {
     text-decoration: underline;
     color: #0056b3;
 }
 
-.card p {
+.card .card-content p {
     font-size: 0.8rem;
     color: #555;
     margin: 0;
-    word-wrap: break-word;
+    text-overflow: ellipsis;
 }
 
 /* Link alinhado à direita */
 .card-content a {
     align-self: flex-end;
     font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 /* Ajuste para quando uma categoria tiver apenas um card */
@@ -125,11 +127,12 @@
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+        gap: 0.5rem;
     }
 
     .card img {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     .card-content {
