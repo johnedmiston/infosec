@@ -63,7 +63,7 @@ function createCards(data, category) {
 
             // Create subcategory title (h2)
             const subcategoryTitle = document.createElement('h2');
-            subcategoryTitle.textContent = section.title;
+            subcategoryTitle.textContent = section.subcategorie_title;
             sectionElement.appendChild(subcategoryTitle);
 
             // Create a container for subcategory cards

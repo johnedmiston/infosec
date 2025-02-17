@@ -1,7 +1,7 @@
 {
     "Fundamentals": [
         {
-            "title": "Guide to PC Backup",
+            "subcategorie_title": "Guide to PC Backup",
             "subcategories": [
                 {
                     "title": "The beginner's guide to pc backup",
@@ -18,7 +18,7 @@
             ]
         },
         {
-            "title": "Cybersecurity Fundamentals",
+            "subcategorie_title": "Cybersecurity Fundamentals",
             "subcategories": [
                 {
                     "title": "Top Ten Safe Computing Tips",
@@ -35,7 +35,7 @@
             ]
         },
         {
-            "title": "Phishing Emails",
+            "subcategorie_title": "Phishing Emails",
             "subcategories": [
                 {
                     "title": "The most common examples of phishing emails (usecure.io)",
@@ -52,7 +52,7 @@
             ]
         },
         {
-            "title": "Cybersecurity Questions For Businesses",
+            "subcategorie_title": "Cybersecurity Questions For Businesses",
             "subcategories": [
                 {
                     "title": "7 Cybersecurity Questions That Can Transform Your Business",
@@ -81,7 +81,7 @@
             ]
         },
         {
-            "title": "Digital Safety for Children and Teens",
+            "subcategorie_title": "Digital Safety for Children and Teens",
             "subcategories": [
                 {
                     "title": "How Parents and Educators Can Protect Children’s Online Privacy",
@@ -104,7 +104,7 @@
             ]
         },
         {
-            "title": "Digital Safety For Seniors",
+            "subcategorie_title": "Digital Safety For Seniors",
             "subcategories": [
                 {
                     "title": "Digital money for seniors",
@@ -115,7 +115,7 @@
             ]
         },
         {
-            "title": "Cyberbullying",
+            "subcategorie_title": "Cyberbullying",
             "subcategories": [
                 {
                     "title": "Cyberbullying: A Guide to Internet and Computer Safety",
@@ -126,7 +126,7 @@
             ]
         },
         {
-            "title": "Cybersecurity Resources Guide",
+            "subcategorie_title": "Cybersecurity Resources Guide",
             "subcategories": [
                 {
                     "title": "Cybersecurity Resources",
@@ -137,6 +137,7 @@
             ]
         },
         {
+            "subcategorie_title": "Cybersecurity Tips for Remote Workers",
             "subcategories": [
                 {
                     "title": "Why training is the best defence against cybersecurity and data threats",
@@ -167,6 +168,7 @@
     ],
     "Cybercrimes": [
         {
+            "subcategorie_title": "Cybercrime Prevention",
             "subcategories": [
                 {
                     "title": "Protecting Yourself Against Identity Theft & Fraud",
@@ -197,7 +199,7 @@
     ],
     "Encryption": [
         {
-            "title": "Encrypting hard drives",
+            "subcategorie_title": "Encrypting hard drives",
             "subcategories": [
                 {
                     "title": "You can encrypt your hard drive, but the protection may not be worth the hassle",
@@ -220,7 +222,7 @@
             ]
         },
         {
-            "title": "Encrypting Files",
+            "subcategorie_title": "Encrypting Files",
             "subcategories": [
                 {
                     "title": "Five Best File Encryption Tools",
@@ -237,7 +239,7 @@
             ]
         },
         {
-            "title": "Encrypting Email",
+            "subcategorie_title": "Encrypting Email",
             "subcategories": [
                 {
                     "title": "How to Encrypt Your Email and Keep Your Conversations Private",
@@ -254,7 +256,7 @@
             ]
         },
         {
-            "title": "Encrypting Tools",
+            "subcategorie_title": "Encrypting Tools",
             "subcategories": [
                 {
                     "title": "Top Privacy Tools for 2024",
@@ -267,7 +269,7 @@
     ],
     "Password": [
         {
-            "title": "",
+            "subcategorie_title": "",
             "subcategories": [
                 {
                     "title": "How Your Passwords Are Stored on the Internet (and When Your Password Strength Doesn't Matter)",
@@ -278,7 +280,7 @@
             ]
         },
         {
-            "title": "Choosing Secure Passwords",
+            "subcategorie_title": "Choosing Secure Passwords",
             "subcategories": [
                 {
                     "title": "Password Strength",
@@ -295,7 +297,7 @@
             ]
         },
         {
-            "title": "Don't use these passwords",
+            "subcategorie_title": "Don't use these passwords",
             "subcategories": [
                 {
                     "title": "10 Worst Password Ideas (As Seen In The Adobe Hack)",
@@ -312,7 +314,7 @@
             ]
         },
         {
-            "title": "Random Password Generators",
+            "subcategorie_title": "Random Password Generators",
             "subcategories": [
                 {
                     "title": "Random.org",
@@ -335,7 +337,7 @@
             ]
         },
         {
-            "title": "Password Managers",
+            "subcategorie_title": "Password Managers",
             "subcategories": [
                 {
                     "title": "LastPass",
@@ -366,7 +368,7 @@
     ],
     "Security": [
         {
-            "title": "Phone Security",
+            "subcategorie_title": "Phone Security",
             "subcategories": [
                 {
                     "title": "Keep your phone safe - How to protect yourself from wireless threats",
@@ -407,7 +409,7 @@
             ]
         },
         {
-            "title": "Securing Operating System",
+            "subcategorie_title": "Securing Operating System",
             "subcategories": [
                 {
                     "title": "SuperAntiSpyware",
@@ -426,7 +428,7 @@
     ],
     "Securing Hardware": [
         {
-            "title": "Vulnerability Scanners",
+            "subcategorie_title": "Vulnerability Scanners",
             "subcategories": [
                 {
                     "title": "Online Port Checker",
@@ -461,7 +463,7 @@
             ]
         },
         {
-            "title": "Securing Ports",
+            "subcategorie_title": "Securing Ports",
             "subcategories": [
                 {
                     "title": "How to portscan your computer for security holes",
@@ -472,7 +474,7 @@
             ]
         },
         {
-            "title": "Securing Routers",
+            "subcategorie_title": "Securing Routers",
             "subcategories": [
                 {
                     "title": "What Is Router Hacking and How to Prevent It",
@@ -503,7 +505,7 @@
     ],
     "Miscellaneous": [
         {
-            "title": "Anonymous Browsing",
+            "subcategorie_title": "Anonymous Browsing",
             "subcategories": [
                 {
                     "title": "Tor Browser",
@@ -514,7 +516,7 @@
             ]
         },
         {
-            "title": "VPN",
+            "subcategorie_title": "VPN",
             "subcategories": [
                 {
                     "title": "What is a VPN and how does it work?",
