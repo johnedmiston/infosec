@@ -1,27 +1,34 @@
+// Function to limit the text to a certain number of characters
+function limitText(text, maxLength) {
+    if (text.length > maxLength) {
+        return text.slice(0, maxLength) + "..."; // Cut the text and add "..."
+    }
+    return text;
+}
+
 async function fetchData() {
     try {
+        // Fetch the JSON file asynchronously
         const response = await fetch('../assets/JSON/file.json');
         const data = await response.json();
-
-        // Obtém a categoria da página a partir do nome do arquivo
-        const category = getCategoryFromURL();
+        const category = getCategoryFromURL();  // Get the category based on the current page URL
 
         if (category) {
-            createCards(data, category);
+            createCards(data, category); // Generate cards dynamically
         } else {
-            console.error("Categoria não encontrada para esta página.");
+            console.error("⚠️ Category not found for this page or category data is missing.");
         }
     } catch (error) {
-        console.error("Erro ao carregar o arquivo JSON:", error);
+        console.error("❌ Error loading the JSON file:", error);
     }
 }
 
-// Função para determinar a categoria com base no nome do arquivo HTML
+// Function to determine the category based on the HTML file name
 function getCategoryFromURL() {
-    const path = window.location.pathname; // Obtém a URL da página
-    const page = path.split("/").pop().replace(".html", ""); // Pega o nome do arquivo sem ".html"
+    const path = window.location.pathname; // Get the current page URL
+    const page = path.split("/").pop().replace(".html", ""); // Extract file name without ".html"
 
-    // Mapeia o nome das páginas para as categorias do JSON
+    // Map page names to JSON categories
     const categoryMap = {
         "backups": "Backups",
         "cybercrimes": "Cybercrimes",
@@ -35,30 +42,31 @@ function getCategoryFromURL() {
         "securing-hardware": "Securing Hardware"
     };
 
-    return categoryMap[page] || null;
+    const category = categoryMap[page] || null;
+
+    return category;
 }
 
-// Função para criar os cards dinamicamente
+// Function to dynamically create cards based on JSON data
 function createCards(data, category) {
     const container = document.querySelector('.cards-container');
-    container.innerHTML = ''; // Limpa o container antes de adicionar os novos cards
+    container.innerHTML = ''; // Clear the container before adding new cards
 
-    // Obter as subcategorias da categoria escolhida (ex: "Backups")
+    // Retrieve the data for the selected category (e.g., "Fundamentals")
     const categoryData = data[category];
 
     if (categoryData) {
         categoryData.forEach(section => {
-
-            // Criar a section para a subcategoria
+            // Create a section for each subcategory
             const sectionElement = document.createElement('section');
             sectionElement.classList.add('subcategory-section');
 
-            // Criar título da subcategoria (h2)
+            // Create subcategory title (h2)
             const subcategoryTitle = document.createElement('h2');
             subcategoryTitle.textContent = section.title;
             sectionElement.appendChild(subcategoryTitle);
 
-            // Criar container para os cards da subcategoria
+            // Create a container for subcategory cards
             const subcategoryContainer = document.createElement('div');
             subcategoryContainer.classList.add('subcategory-container');
 
@@ -67,24 +75,27 @@ function createCards(data, category) {
                 card.classList.add('card');
 
                 const img = document.createElement('img');
-                img.src = subcategory.image || '../assets/images/logo.png';
-                img.alt = subcategory.title;
+                img.src = subcategory.img && subcategory.img.trim() !== "" ? subcategory.img : '../assets/images/logo.png';
 
                 const cardContent = document.createElement('div');
                 cardContent.classList.add('card-content');
 
+                // Limit title to 80 characters
                 const title = document.createElement('h3');
-                title.textContent = subcategory.title;
+                title.textContent = limitText(subcategory.title, 50);  // Apply the limitText function
 
+                // Limit description to 100 characters
                 const description = document.createElement('p');
-                description.textContent = subcategory.description || 'No description available.';
+                description.textContent = subcategory.description && subcategory.description.trim() !== ""
+                    ? limitText(subcategory.description, 70)  // Apply the limitText function
+                    : 'No description available.';
 
                 const link = document.createElement('a');
                 link.href = subcategory.link;
                 link.textContent = 'Learn more';
                 link.target = '_blank';
-                
-                // Montando estrutura do card
+
+                // Assemble the card structure
                 cardContent.appendChild(title);
                 cardContent.appendChild(description);
                 cardContent.appendChild(link);
@@ -95,16 +106,17 @@ function createCards(data, category) {
                 subcategoryContainer.appendChild(card);
             });
 
-            // Adiciona os elementos à section
+            // Add elements to the section
             sectionElement.appendChild(subcategoryContainer);
 
-            // Adiciona a section ao container principal
+            // Append the section to the main container
             container.appendChild(sectionElement);
         });
     } else {
         container.innerHTML = `<p>No data available for this category.</p>`;
+        console.error("No data found for category:", category);
     }
 }
 
-// Quando a página carregar, chama a função para buscar os dados e gerar os cards
+// When the page loads, fetch the data and generate the cards
 window.addEventListener('DOMContentLoaded', fetchData);
