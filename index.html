@@ -1,195 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- For SEO purposes -->
-    <meta name="description" content="Learn about cybersecurity and how to protect your online presence.">
-    <meta name="keywords" content="cybersecurity, online security, encryption, backups, security systems">
-    <meta name="author" content="Cybermissions">
-    <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/png" href="./assets/images/logo.png">
-
-    <!-- Open Graph (for social networks) -->
-    <meta property="og:title" content="Cybermissions - Cybersecurity Knowledge">
-    <meta property="og:description" content="Learn about cybersecurity and how to protect your online presence.">
-    <meta property="og:image" content="https://cybermissions.org/logo.png">
-    <meta property="og:url" content="https://cybermissions.org/infosec/">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Image of hacker -->
-    <meta name="author" content="Tima Miroshnichenko">
-    <meta name="image-credit" content="Photo by Tima Miroshnichenko on Pexels">
-    <meta name="image-url" content="https://images.pexels.com/photos/5380651/pexels-photo-5380651.jpeg">
-
-    <title>Cybermissions - Information Security</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <script defer src="./assets/js/main.js"></script>
-</head>
-
-<body>
-    <div id="header"></div> <!-- Header goes here -->
-
-    <main>
-        <section class="hero">
-            <h1>Welcome to Cybermissions Information Security</h1>
-            <p>Empowering you to protect your digital life.</p>
-        </section>
-
-        <section class="intro-card">
-            <div class="intro-content">
-                <img 
-                    src="./assets/images/hacker_by_TimaMiroshnichenko.jpeg" 
-                    alt="hacker"
-                    aria-label="Picture of Tima Miroshnichenko" 
-                    title="Photo by Tima Miroshnichenko on Pexels"
-                >
-
-                <div class="intro-text">
-                    <p>In today’s digital world, small businesses, small Christian businesses, Christian nonprofits,
-                        churches, and mission-driven organizations face growing challenges in protecting their sensitive
-                        data and privacy. This website offers practical guides and essential tips tailored to help you
-                        safeguard your organization from cyber threats, ensuring your operations stay secure and your
-                        community remains protected.
-                    </p>
-
-                    <small>This website is a list of useful resources for churches, non-profits, families, individuals
-                        and small businesses. It does not constitute technical, legal or financial guidance.
-                    </small>
-                </div>
-            </div>
-        </section>
-
-        <section class="topics">
-            <h2>Explore Our Key Topics</h2>
-            <ul>
-                <li>
-                    <a href="./pages/fundamentals.html">
-                        <div class="topic-card">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <img src="./assets/images/security-protection-anti-virus-software.jpeg"
-                                        alt="Fundamentals Icon" class="card-icon" title="Picture by PixaBay">
-                                    <strong>Fundamentals</strong>
-                                </div>
-                                <div class="card-back">
-                                    <p>Understanding the basics of cybersecurity.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./pages/encryption.html">
-                        <div class="topic-card">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <img src="./assets/images/cryptographic.jpg" alt="Encryption Icon" class="card-icon"
-                                        title="Picture of Tumbledore (pixabay.com)">
-                                    <strong>Encryption</strong>
-                                </div>
-                                <div class="card-back">
-                                    <p>Keeping your communications private.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./pages/password.html">
-                        <div class="topic-card">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <img src="./assets/images/password-security.jpg" alt="Password Security"
-                                        class="card-icon"
-                                        title="Password security by Nick Youngson CC BY-SA 3.0 Pix4free">
-                                    <strong>Password Security</strong>
-                                </div>
-                                <div class="card-back">
-                                    <p>Creating strong and unique passwords.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./pages/security.html">
-                        <div class="topic-card">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <img src="./assets/images/MobileSecurity_by_AneteLusina.png"
-                                        alt="Cyber Threats & Mobile Security Icon"
-                                        title="Pessoa De Jaqueta Preta Segurando Um Smartphone Preto" class="card-icon">
-                                    <strong>Cyber Threats & Mobile Security</strong>
-                                </div>
-                                <div class="card-back">
-                                    <p>Staying safe from online attacks.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./pages/securing-hardware.html">
-                        <div class="topic-card">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <img src="./assets/images/blackCables_by_Josh Sorenson.jpeg" alt="Securing Hardware"
-                                        title="Black Cables by Josh Sorenson" class="card-icon">
-                                    <strong>Securing Hardware</strong>
-                                </div>
-                                <div class="card-back">
-                                    <p>Protecting your devices from physical threats.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./pages/cybercrime.html">
-                        <div class="topic-card">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <img src="./assets/images/cybercrime_by_SoraShimazaki.jpeg"
-                                        alt="Hacker Digitando No Laptop Com Informações Na Tela" class="card-icon">
-                                    <strong>Cybercrime</strong>
-                                </div>
-                                <div class="card-back">
-                                    <p>Recognizing and reporting online crimes.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="./pages/cybercrime.html">
-                        <div class="topic-card">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <img src="./assets/images/security_by_MiguelAPadrinan.webp" alt="" class="card-icon"
-                                        title="Security by Miguel A. Padrinan">
-                                    <strong>Miscellaneous</strong>
-                                </div>
-                                <div class="card-back">
-                                    <p>Other important security topics.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <blockquote class="bible-verse">
-            "The prudent see danger and take refuge, but the simple keep going and pay the penalty." – Proverbs 22:3
-        </blockquote>
-    </main>
-
-    <div id="footer"></div> <!-- Aqui será carregado o footer -->
-</body>
-
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Information Security Resources</title>
+		<script src="https://kit.fontawesome.com/9fd593a936.js" crossorigin="anonymous"></script>
+		<link href="/css/index.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="img/png" href="images/icons/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+		name="NAME"
+		content="CONTENT"
+		/>
+	</head>
+	<body>
+		<div class="wrapper index">
+			<div class="d-logo index">
+				<img src="img/logo.png" alt="Cybermissions Logo">
+			</div>
+			<div class="navbar index">
+				<div class="nav index">
+					<div class="logo index">
+						<img src="img/logo.png" alt="Cybermissions logo">
+					</div>
+					<ul class="listitems index">
+						<li class="links index"><a href="author.html">About the Author</a></li>
+						<li class="links index"><a href="book.html">About the Book</a></li>
+						<li class="links index"><a href="https://shorturl.at/g6UHr" target="_blank">Buy the Book</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
