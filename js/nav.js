@@ -1,7 +1,7 @@
 var home = document.getElementById('home');
 var church = document.getElementById('church');
 var business = document.getElementById('business');
-
+    
 function homeClick(){
     if(home.classList.contains('dd-selected')){
         home.classList.remove('dd-selected');
@@ -35,12 +35,21 @@ function businessClick(){
         business.classList.add('dd-selected');
     }
 }
-home.addEventListener('click', function(){
-    homeClick();
-});
-church.addEventListener('click', function(){
-    churchClick();
-});
-business.addEventListener('click', function(){
-    businessClick();
-});
+if (home) {
+    home.addEventListener('click', function(){
+        homeClick();
+    });
+}
+
+if (church) {
+    church.addEventListener('click', function(){
+        churchClick();
+    });
+}
+
+if (business) {
+    business.addEventListener('click', function(){
+        businessClick();
+    });
+}
+
