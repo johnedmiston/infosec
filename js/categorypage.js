@@ -6,6 +6,7 @@ const targetCategory = categories[parseInt(categoryUrl)].sub[parseInt(subcatUrl)
 console.log('Looking for category:', targetCategory);
 
 categoryName.innerHTML = "<h1>" + targetCategory + "</h1>";
+document.title = targetCategory + " - Security Resource Center";
 
 // Use this alternative approach to avoid nesting everything in a callback
 $.ajax({
@@ -37,7 +38,12 @@ $.ajax({
                         newCard.find('#card-image').html('<img src="/img/articles/' + i + '.png" alt="' + articleObj.title + '">');
                         newCard.find('#card-header').html('<h1>' + articleObj.title + '</h1>');
                         newCard.find('#card-text').html('<p>' + articleObj.description + '</p>');
-                        newCard.find('#card-link').html('<a href="' + articleObj.link + '">Open Page</a>');
+                        if (articleObj.sameorigin === false) {
+                            newCard.find('#card-link').html('<a href="../html/article.html?category=' + categoryUrl + '&sub=' + subcatUrl + '&article=' + i +'">Open Page</a>');
+                        } else {
+                            newCard.find('#card-link').html('<a href="' + articleObj.link + '" target="_blank">Open Page</a>');
+                        }
+                        
                         newCard.find('#card-date').html('<p>' + articleObj.date + '</p>');
                         newCard.find('#card-author').html('<p>' + articleObj.author + '</p>');
 

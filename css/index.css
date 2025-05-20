@@ -141,20 +141,43 @@ nav.nav{
     align-items: center;
     margin: var(--gridwidth);
     padding:0px;
+    max-width:350px;
+}
+.logo i{
+    font-size: 30px;
+    color: var(--links);
 }
 .logo img, .logo h1{
     width:40%;
 }
 .logo img{
-    margin:0px, 20%, 0px, 0px;
+    margin: var(--gridwidth);
 }
 .logo h1, .logo{
     text-decoration: none;
     color: var(--links);
+    margin:var(--gridwidth), var(--gridwidth), var(--gridwidth),0px;
+}
+.logo h1{
+    width:110px;
 }
 .core-nav{
     display:flex;
     flex-direction: column;
+}
+.logo-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.core-nav.article{
+    padding:var(--closewidth);
+    flex-direction: row;
+    justify-content:center;
+}
+.logo-info{
+    display:flex;
+    align-items: center;
 }
 .dropdown {
     padding: var(--closewidth);
@@ -466,4 +489,28 @@ nav.nav{
     
 }
 /*cards end*/
-
+/*article-nav start*/
+.article-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav.article  a img{
+    margin: var(--closewidth) var(--gridwidth);
+}
+.nav.article a i{
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+.article-info{
+    width:260px;
+    margin-bottom: var(--closewidth);
+}
+.title-info{
+    display:flex;
+    margin:0 var(--gridwidth);
+}
+#article-link{
+    height:96vh;
+}
+/*article-nav end*/
