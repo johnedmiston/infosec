@@ -69,20 +69,22 @@ var article = [
         date: "",
         author: "Emma Woods"
     },
-    {//3
-        categories: [
-            categories[0].sub[0],
-            categories[0].sub[1],
-            categories[0].sub[3],
-            categories[1].sub[1]
-        ],
-        link: "https://phishing.iu.edu/stories/index.html",
-        title: "Stories & examples: Phishing Education & Training",
-        description: "Enhance your cybersecurity awareness with realistic phishing scenarios. Interactive examples teach email security best practices, scam recognition techniques, and vital anti-phishing strategies to protect your personal and business data.",
-        date: "",
-        author: "Indiana University"
+    {
+    id: 3,
+    categories: [
+        categories[0].sub[0],
+        categories[0].sub[1],
+        categories[0].sub[3],
+        categories[1].sub[1]
+    ],
+    link: "https://phishing.iu.edu/stories/index.html",
+    title: "Stories & examples: Phishing Education & Training",
+    description: "Enhance your cybersecurity awareness with realistic phishing scenarios. Interactive examples teach email security best practices, scam recognition techniques, and vital anti-phishing strategies to protect your personal and business data.",
+    date: "",
+    author: "Indiana University"
     },
-    {//4
+    {
+        id: 4,
         categories: [
             categories[0].sub[1],
             categories[1].sub[1],
@@ -94,7 +96,8 @@ var article = [
         date: "November 14, 2023",
         author: "Capital One"
     },
-    {//5
+    {
+        id: 5,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1]
@@ -105,7 +108,8 @@ var article = [
         date: "January 26, 2021",
         author: "edX"
     },
-    {//6
+    {
+        id: 6,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1]
@@ -116,7 +120,8 @@ var article = [
         date: "April 26, 2023",
         author: "MyTutor"
     },
-    {//7
+    {
+        id: 7,
         categories: [
             categories[0].sub[0],
             categories[0].sub[2],
@@ -128,7 +133,8 @@ var article = [
         date: "",
         author: "Cyber.org"
     },
-    {//8
+    {
+        id: 8,
         categories: [
             categories[0].sub[3]
         ],
@@ -138,7 +144,8 @@ var article = [
         date: "",
         author: "ComparetheMarket"
     },
-    {//9
+    {
+        id: 9,
         categories: [
             categories[0].sub[0],
             categories[0].sub[2],
@@ -149,7 +156,8 @@ var article = [
         date: "",
         author: "Ana Karely Perez"
     },
-    {//10
+    {
+        id: 10,
         categories: [
             categories[2].sub[1]
         ],
@@ -159,7 +167,8 @@ var article = [
         date: "July, 2021",
         author: "edX"
     },
-    {//11
+    {
+        id: 11,
         categories: [
             categories[2].sub[1]
         ],
@@ -169,7 +178,8 @@ var article = [
         date: "October 8, 2024",
         author: "Jose Toledo"
     },
-    {//12
+    {
+        id: 12,
         categories: [
             categories[0].sub[0],
             categories[0].sub[1],
@@ -181,7 +191,8 @@ var article = [
         date: "",
         author: "Totally Money"
     },
-    {//13
+    {
+        id: 13,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1],
@@ -193,7 +204,8 @@ var article = [
         date: "May 8,2025",
         author: "Nivedita James Palatty"
     },
-    {//14
+    {
+        id: 14,
         categories: [
             categories[0].sub[0],
             categories[1].sub[0],
@@ -205,7 +217,8 @@ var article = [
         date: "January 15, 2015",
         author: "Lincoln Spector"   
     },
-    {//15
+    {
+        id: 15,
         categories: [
             categories[0].sub[0],
             categories[1].sub[0],
@@ -217,7 +230,8 @@ var article = [
         date: "January 27, 2014",
         author: "Whitson Gordon"
     },
-    {//16
+    {
+        id: 16,
         categories: [
             categories[0].sub[0],
             categories[1].sub[0],
@@ -229,7 +243,8 @@ var article = [
         date: "",
         author: "Free Software Foundation"
     },
-    {//17
+    {
+        id: 17,
         categories: [
             categories[0].sub[0],
             categories[1].sub[0],
@@ -241,7 +256,8 @@ var article = [
         date: "February 8, 2015",
         author: "Alan Henry"
     },
-    {//18
+    {
+        id: 18,
         categories: [
             categories[0].sub[0],
             categories[1].sub[0],
@@ -253,7 +269,8 @@ var article = [
         date: "",
         author: "Igor Pavlov"
     },
-    {//19
+    {
+        id: 19,
         categories: [
             categories[0].sub[0],
             categories[1].sub[0],
@@ -265,7 +282,8 @@ var article = [
         date: "August 14, 2013",
         author: "Alan Henry"
     },
-    {//20
+    {
+        id: 20,
         categories: [
             categories[0].sub[0],
             categories[1].sub[0],
@@ -277,7 +295,8 @@ var article = [
         date: "",
         author: "Free Software Foundation"
     },
-    {//21
+    {
+        id: 21,
         categories: [
             categories[2].sub[1]
         ],
@@ -287,7 +306,8 @@ var article = [
         date: "February 2024",
         author: "U.S. Department of Commerce, Et al."
     },
-    {//22
+    {
+        id: 22,
         categories: [
             categories[2].sub[1]
         ],
@@ -297,7 +317,8 @@ var article = [
         date: "",
         author: "Thomas Murray"
     },
-    {//23
+    {
+        id: 23,
         categories: [
             categories[2].sub[1]
         ],
@@ -307,7 +328,8 @@ var article = [
         date: "",
         author: "Enroll Education LLC"
     },
-    {//24
+    {
+        id: 24,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1]
@@ -318,7 +340,8 @@ var article = [
         date: "January 5, 2024",
         author: "Davey Winder"
     },
-    {//25
+    {
+        id: 25,
         categories: [
             categories[0].sub[0],
             categories[0].sub[2],
@@ -332,7 +355,8 @@ var article = [
         date: "January 27, 2023",
         author: "Dr. Nassim Assefi, Et al."
     },
-    {//26
+    {
+        id: 26,
         categories: [
             categories[0].sub[0],
             categories[0].sub[2],
@@ -344,7 +368,8 @@ var article = [
         date: "January 5, 2024",
         author: "Matthew Bill"
     },
-    {//27
+    {
+        id: 27,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1]
@@ -355,7 +380,8 @@ var article = [
         date: "",
         author: "The Tor Project"
     },
-    {//28
+    {
+        id: 28,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1]
@@ -366,7 +392,8 @@ var article = [
         date: "December 19, 2023",
         author: "Rob Mardisalu"
     },
-    {//29
+    {
+        id: 29,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1]
@@ -377,7 +404,8 @@ var article = [
         date: "",
         author: "TheBestVPN"
     },
-    {//30
+    {
+        id: 30,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1]
@@ -388,7 +416,8 @@ var article = [
         date: "June 20, 2012",
         author: "Whitson Gordon"
     },
-    {//31
+    {
+        id: 31,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1]
@@ -399,7 +428,8 @@ var article = [
         date: "April 30, 2025",
         author: "Corey Neskey"
     },
-    {//32
+    {
+        id: 32,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1]
@@ -410,7 +440,8 @@ var article = [
         date: "March 3, 2014",
         author: "Bruce Schneier"
     },
-    {//33
+    {
+        id: 33,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1],
@@ -422,7 +453,8 @@ var article = [
         date: "November 20, 2013",
         author: "Serge Malenkovich"
     },
-    {//34
+    {
+        id: 34,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1],
@@ -434,7 +466,8 @@ var article = [
         date: "April 11, 2014",
         author: "Melanie Pinola"
     },
-    {//35
+    {
+        id: 35,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1],
@@ -446,7 +479,8 @@ var article = [
         date: "",
         author: "Random.org"
     },
-    {//36
+    {
+        id: 36,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1],
@@ -458,7 +492,8 @@ var article = [
         date: "",
         author: "Arnold G. Reinhold"
     },
-    {//37
+    {
+        id: 37,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1],
@@ -470,7 +505,8 @@ var article = [
         date: "",
         author: "Safety Detectives"
     },
-    {//38
+    {
+        id: 38,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1],
@@ -482,7 +518,8 @@ var article = [
         date: "",
         author: "LastPass"
     },
-    {//39
+    {
+        id: 39,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1],
@@ -494,7 +531,8 @@ var article = [
         date: "",
         author: "KeePass"
     },
-    {//40
+    {
+        id: 40,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1],
@@ -506,7 +544,8 @@ var article = [
         date: "",
         author: "Password Safe"
     },
-    {//41
+    {
+        id: 41,
         categories: [
             categories[0].sub[0],
             categories[1].sub[1],
@@ -518,7 +557,8 @@ var article = [
         date: "",
         author: "Bitwarden"
     },
-    {//42
+    {
+        id: 42,
         categories: [
             categories[0].sub[4]
         ],
@@ -528,7 +568,8 @@ var article = [
         date: "June, 2013",
         author: "Consumer Reports"
     },
-    {//43
+    {
+        id: 43,
         categories: [
             categories[0].sub[4]
         ],
@@ -538,7 +579,8 @@ var article = [
         date: "June, 2013",
         author: "Consumer Reports"
     },
-    {//44
+    {
+        id: 44,
         categories: [
             categories[0].sub[4]
         ],
@@ -548,7 +590,8 @@ var article = [
         date: "",
         author: "Secure Data Recovery"
     },
-    {//45
+    {
+        id: 45,
         categories: [
             categories[0].sub[4]
         ],
@@ -558,7 +601,8 @@ var article = [
         date: "January 13, 2015",
         author: "Kimberly Palmer"
     },
-    {//46
+    {
+        id: 46,
         categories: [
             categories[0].sub[4]
         ],
@@ -568,7 +612,8 @@ var article = [
         date: "",
         author: "Verizon"
     },
-    {//47
+    {
+        id: 47,
         categories: [
             categories[0].sub[4]
         ],
@@ -578,7 +623,8 @@ var article = [
         date: "March 14, 2025",
         author: "Tom from Green Smartphones"
     },
-    {//48
+    {
+        id: 48,
         categories: [
             categories[0].sub[4]
         ],
@@ -588,7 +634,8 @@ var article = [
         date: "May 24, 2012",
         author: "PCMag Staff"
     },
-    {//49
+    {
+        id: 49,
         categories: [
             categories[2].sub[1]
         ],
@@ -598,7 +645,8 @@ var article = [
         date: "",
         author: "DNSChecker.org"
     },
-    {//50
+    {
+        id: 50,
         categories: [
             categories[2].sub[1]
         ],
@@ -608,7 +656,8 @@ var article = [
         date: "January 29, 2013",
         author: "HD Moore"
     },
-    {//51
+    {
+        id: 51,
         categories: [
             categories[2].sub[1]
         ],
@@ -618,7 +667,8 @@ var article = [
         date: "",
         author: "RAPID Metasploit"
     },
-    {//52
+    {
+        id: 52,
         categories: [
             categories[2].sub[1]
         ],
@@ -628,7 +678,8 @@ var article = [
         date: "November 15, 2024",
         author: "Tim Keary"
     },
-    {//53
+    {
+        id: 53,
         categories: [
             categories[2].sub[1]
         ],
@@ -638,7 +689,8 @@ var article = [
         date: "",
         author: "OpenVAS"
     },
-    {//54
+    {
+        id: 54,
         categories: [
             categories[1].sub[2],
             categories[2].sub[0],
@@ -650,7 +702,8 @@ var article = [
         date: "September 7, 2006",
         author: "Gina Trapani"
     },
-    {//55
+    {
+        id: 55,
         categories: [
             categories[0].sub[0],
             categories[1].sub[2],
@@ -662,7 +715,8 @@ var article = [
         date: "February 18, 2021",
         author: "Ivan Belcic"
     },
-    {//56
+    {
+        id: 56,
         categories: [
             categories[0].sub[0],
             categories[1].sub[2],
@@ -674,7 +728,8 @@ var article = [
         date: "September 25, 2024",
         author: "Anthony Pell"
     },
-    {//57
+    {
+        id: 57,
         categories: [
             categories[0].sub[0],
             categories[1].sub[2],
@@ -686,7 +741,8 @@ var article = [
         date: "November 27, 2012",
         author: "Bogdan Calin"
     },
-    {//58
+    {
+        id: 58,
         categories: [
             categories[0].sub[0],
             categories[1].sub[2],
@@ -698,7 +754,8 @@ var article = [
         date: "October 27, 2023",
         author: "Chris Hoffman, Et al."
     },
-    {//59
+    {
+        id: 59,
         categories: [
             categories[0].sub[0],
             categories[1].sub[0],
@@ -710,7 +767,8 @@ var article = [
         date: "",
         author: "SUPERAntiSpyware"
     },
-    {//60
+    {
+        id: 60,
         categories: [
             categories[0].sub[0],
             categories[1].sub[0],
@@ -722,6 +780,7 @@ var article = [
         date: "",
         author: "Red Hat Customer Content Services"
     }
+
 ];
 /*var categories = [
     {

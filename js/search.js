@@ -22,8 +22,10 @@ function findArticles(findKeyword) {
     var articleResults = [];
     
     // Iterate through all articles
-    for (let i = 0; i < article.length; i++) {
-        const currentArticle = article[i];
+    var maxId = Math.max(...article.map(o => o.id))
+        // Process articles
+    for (var i = 0; i < maxId; i++) {
+        const currentArticle = article.find(a => a.id === i);
         const title = currentArticle.title || '';
         const description = currentArticle.description || '';
         
@@ -74,12 +76,13 @@ $.ajax({
                 for (var a = 0; a < foundArticles.length; a++) {
                     var foundArticle = foundArticles[a];
                     for (var i = 0; i < article.length; i++) {
-                        if (article[i] !== null) {
-                            var articleTitle = article[i].title || '';
+                        var articleId = article.find(a => a.id === i);
+                        if (articleId !== null) {
+                            var articleTitle = articleId.title || '';
                             var foundTitle = foundArticle.title || '';
                             if (articleTitle === foundTitle) {
-                                console.log('Match found: Article ' + i + ' has ' + foundArticle.count + ' keywords: ' + keyword);
-                                var articleObj = article[i];
+                                console.log('Match found: Article ID:' + i + ' has ' + foundArticle.count + ' keywords: ' + keyword);
+                                var articleObj = articleId;
                                 
                                 // Create a new card for each found article
                                 var newCard = originalTemplate.clone();

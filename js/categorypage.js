@@ -30,7 +30,7 @@ $.ajax({
                     
                     // FIXED: Check if this article has the target category
                     if (category === targetCategory) {
-                        console.log('Match found: Article ' + i + ' has category ' + category);
+                        console.log('Match found: Article ID:' + i + ' has category ' + category);
                         var newCard = originalTemplate.clone();
                         newCard.addClass("id" + i);
                         $("#cardContainer").append(newCard);
@@ -45,7 +45,7 @@ $.ajax({
 
                         break; // No need to check other categories
                     } else {
-                        console.log('No match: Article ' + i + ' does not have this category.');
+                        console.log('No match: Article ID:' + i + ' does not have this category.');
                     }
                 }
             }
