@@ -1,33 +1,31 @@
 var categories = [
-    {
-        name: 'family',
+    {                                       // categories[0]
+        name: 'Family',
         sub: [
-             "General Online Safety",       // General Online Safety
-             "Identity Theft and Fraud",      // idtheft
-             "Children and Teens",     // children
-             "The Elderly",      // elderly
-             "Cell Phone Safety"     // cellphone
+             "General Online Safety",       // categories[0].sub[0]
+             "Identity Theft and Fraud",    // categories[0].sub[1]
+             "Children and Teens",          // categories[0].sub[2]
+             "The Elderly",                 // categories[0].sub[3]
+             "Cell Phone Safety"            // categories[0].sub[4]
         ]
     },
-    {
-        name: 'church',
+    {                                       // categories[1]
+        name: 'Church',
         sub: [
-            "Church Computers",         // computers
-            "Protecting Info",   // protecting info
-            "Protecting Church Wifi"         // churchwifi
+            "Church Computers",             // categories[1].sub[0]
+            "Protecting Info",              // categories[1].sub[1]
+            "Protecting Church WiFi"        // categories[1].sub[2]     
         ]
     },
-    {
-        name: 'business',
+    {                                       // categories[2]    
+        name: 'Business',
         sub: [
-            "WiFi Security",     // wifi security
-            "Cybersecurity"     // cyber security
+            "WiFi Security",                // categories[2].sub[0]
+            "Cybersecurity"                 // categories[2].sub[1]
         ]
     }   
 ];
-/*guide to insert and delete articles
-
-*/
+/*do not change anything above this line, it is used to generate the categories in the code.*/
 var article = [
      {
         id: 0,
