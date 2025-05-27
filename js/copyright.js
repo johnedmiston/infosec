@@ -1,7 +1,7 @@
 (function(){ //let's put this in a function, YOLO.
     var yearCreated = 2025; //change this to the year the website was first published on a public web server.
     var owners = [
-        'Cybermissions'
+        'Cybermissions, All Rights Reserved'
     ]; 
     //change the string values above to the legal name of the copyright holder, a legal name. Also add ', All Rights Reserved' if all the rights are legally reserved. Add as many as you want to.
     /* example:
