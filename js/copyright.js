@@ -1,4 +1,4 @@
-(function(){ //let's put this in a function, YOLO.
+document.addEventListener("footerLoaded", function() {//let's put this in a function, YOLO.
     var yearCreated = 2025; //change this to the year the website was first published on a public web server.
     var owners = [
         'Cybermissions, All Rights Reserved'
@@ -23,7 +23,7 @@
     console.log('the copyright year is: ' + yearCreated);// shows year created in console
     console.log('the number of copyright owners is: ' + ownerNum); //shows number of copyright owners in console
 
-    var copyid = document.getElementById('copy'); //snag the copyright on the DOM
+    var copyid = document.querySelector('.footer #copy'); //snag the copyright on the DOM
     var copyright = '' //declare copyright var to a string
     for(let i = 0; i < ownerNum; i++){ //for every copyright holder
         if(year > yearCreated){ //decide if an origin year needs to be added in with the current year.
@@ -33,4 +33,4 @@
         };
     };
     copyid.innerHTML = copyright; //display all copyright holders in the HTML
-}());
+});
