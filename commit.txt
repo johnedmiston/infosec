@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 <type>[optional scope]: <description>
 [optional body]
+=======
+<type>[optional scope]: <description>
+[optional body]
+>>>>>>> dd502d5c71f007656c996d8d4822b3bff832f849
 [optional footer(s)]
