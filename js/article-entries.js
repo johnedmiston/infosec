@@ -427,228 +427,116 @@ var article = [
         date: "July 12, 2022",
         author: "Derek A. Smith"
     },
-    {//DELETE THIS, diceware is worse than a password manager
+    {
         id: 36,
         categories: [
             categories[0].sub[0],
-            categories[1].sub[1],
-            categories[2].sub[1]
+            categories[1].sub[1]
         ],
-        link: "https://theworld.com/~reinhold/diceware.html",
-        title: "The Diceware Passphrase Home Page",
-        description: "Master the Diceware method for creating uncrackable yet memorable passphrases. Learn this dice-based random selection system for generating secure passwords with mathematical strength that resists even advanced cracking attempts.",
-        date: "",
-        author: "Arnold G. Reinhold"
+        link: "https://www.passwordmanager.com/best-password-managers/",
+        title: "The Best Password Managers of 2025",
+        description: "2025's top password managers reviewed: Compare leading security tools for generating, storing, and auto-filling credentials. Essential protection against data breaches with cross-platform encryption for individuals, families, and businesses.",
+        date: "June 23, 2023",
+        author: "Gunnar Kallstrom"
     },
-    {//DELETE THIS
-        id: 37,
-        categories: [
-            categories[0].sub[0],
-            categories[1].sub[1],
-            categories[2].sub[1]
-        ],
-        link: "https://www.safetydetectives.com/password-meter/",
-        title: "Strong Password Generator - 100% Free & Online",
-        description: "Create impenetrable passwords with this free security tool. Generate random, high-entropy credentials that resist brute force attacks and password cracking algorithms while maintaining usability for your important accounts.",
-        date: "",
-        author: "Safety Detectives"
-    },
-    {//DELETE THIS
-        id: 38,
-        categories: [
-            categories[0].sub[0],
-            categories[1].sub[1],
-            categories[2].sub[1]
-        ],
-        link: "https://www.lastpass.com/",
-        title: "LastPass Password Manager",
-        description: "Comprehensive password management solution that securely stores, generates and auto-fills strong credentials. Simplify your digital security with encrypted vault technology and cross-platform access to protect all your accounts.",
-        date: "",
-        author: "LastPass"
-    },
-    {//DELETE THIS
-        id: 39,
-        categories: [
-            categories[0].sub[0],
-            categories[1].sub[1],
-            categories[2].sub[1]
-        ],
-        link: "https://keepass.info/index.html",
-        title: "Keepass Password Manager",
-        description: "Open-source password management with military-grade encryption and portable functionality. Store credentials securely with multiple authentication factors, auto-type functionality, and robust export options for complete security control.",
-        date: "",
-        author: "KeePass"
-    },
-    {//DELETE THIS
-        id: 40,
-        categories: [
-            categories[0].sub[0],
-            categories[1].sub[1],
-            categories[2].sub[1]
-        ],
-        link: "https://pwsafe.org/faq.shtml",
-        title: "Password Safe",
-        description: "Secure your entire credential database with just one master password. This encrypted password management solution eliminates risky practices like sticky notes and text files while providing convenient, organized access to all your accounts.",
-        date: "",
-        author: "Password Safe"
-    },
-    {//DELETE THIS
-        id: 41,
-        categories: [
-            categories[0].sub[0],
-            categories[1].sub[1],
-            categories[2].sub[1]
-        ],
-        link: "https://bitwarden.com/",
-        title: "Bitwarden Password Manager",
-        description: "Open-source password management with end-to-end encryption for individuals and organizations. Store, share and sync credentials securely across all devices with this trusted, transparent security solution for complete digital protection.",
-        date: "",
-        author: "Bitwarden"
-    },
-    {//DELETE THIS
+    {
         id: 42,
         categories: [
             categories[0].sub[4]
         ],
-        link: "https://www.consumerreports.org/cro/magazine/2013/06/keep-your-phone-safe/index.htm",
-        title: "Keep Your Phone Safe",
-        description: "Essential smartphone security guide for the 100+ million American users. Learn practical protection strategies for mobile payment apps, travel utilities, and financial tools to prevent unauthorized access and data breaches.",
-        date: "June, 2013",
-        author: "Consumer Reports"
+        link: "https://consumer.ftc.gov/articles/how-protect-your-phone-hackers",
+        title: "How To Protect Your Phone From Hackers",
+        description: "Essential mobile security guide to protect your phone from hackers. Learn practical strategies to prevent identity theft, secure sensitive information, and safeguard personal data stored on your device against common attack vectors.",
+        date: "July, 2022",
+        author: "Federal Trade Commission"
     },
-    {//DELETE THIS
-        id: 43,
-        categories: [
-            categories[0].sub[4]
-        ],
-        link: "https://www.consumerreports.org/cro/magazine/2013/06/keep-your-phone-safe/index.htm",
-        title: "Keep Your Phone Safe - How to protect yourself from wireless threats",
-        description: "Learn critical mobile security lessons from real-world smartphone compromises. Discover how seemingly harmless apps can breach your network connectivity and implement protection strategies for your mobile digital ecosystem.",
-        date: "June, 2013",
-        author: "Consumer Reports"
-    },
-    {//DELETE THIS
+    {
         id: 44,
         categories: [
             categories[0].sub[4]
         ],
-        link: "https://www.securedatarecovery.com/resources/guide-to-personal-smartphone-security",
-        title: "Personal Smartphone Security Guide",
-        description: "Enhance mobile device protection with multi-layered security strategies. Learn how to implement effective passwords, app-specific credentials, and advanced authentication methods to secure sensitive information on your smartphone.",
-        date: "",
-        author: "Secure Data Recovery"
+        link: "https://preyproject.com/blog/phone-security-20-ways-to-secure-your-mobile-phone",
+        title: "Phone security: how to protect your phone from hackers",
+        description: "Comprehensive phone security guide with 20 actionable protection strategies. Learn to defend against malware, phishing attacks, and unauthorized access while maintaining convenience and functionality on your data-rich smartphone.",
+        date: "October 3, 2024",
+        author: "Hugh Taylor"
     },
-    {//DELETE THIS
+    {
         id: 45,
         categories: [
             categories[0].sub[4]
         ],
-        link: "https://money.usnews.com/money/personal-finance/articles/2015/01/13/10-ways-to-keep-your-phone-safe",
-        title: "10 Ways to Keep Your Phone Safe",
-        description: "Protect your smartphone with 10 essential security strategies. Learn practical safeguards for the device 58% of Americans use daily for navigation, social media, browsing, and shopping to prevent privacy breaches and data theft.",
-        date: "January 13, 2015",
-        author: "Kimberly Palmer"
-    },
-    {//DELETE THIS
-        id: 46,
-        categories: [
-            categories[0].sub[4]
-        ],
-        link: "https://www.verizon.com/articles/8-common-sense-tips-to-keep-your-smartphone-secure/",
-        title: "8 Common-Sense Tips to Keep Your Smartphone Secure",
-        description: "Essential smartphone protection strategies from PIN security to dedicated security apps. Implementation-ready tips for safeguarding your mobile device and personal information from increasingly sophisticated digital threats.",
-        date: "",
-        author: "Verizon"
+        link: "https://www.mcafee.com/blogs/mobile-security/7-tips-to-protect-your-smartphone-from-getting-hacked/",
+        title: "7 Tips to Protect Your Smartphone from Getting Hacked",
+        description: "Seven expert strategies to prevent smartphone hacking for business and personal users. Essential security practices to protect sensitive data, prevent network infiltration, and secure dual-purpose devices against sophisticated threats.",
+        date: "March 14, 2024",
+        author: "Amy Bunn"
     },
     {
-        id: 47,
-        categories: [
-            categories[0].sub[4]
-        ],
-        link: "https://greensmartphones.com/blog/how-to-keep-your-smartphone-secure/",
-        title: "How To Keep Your Phone Secure",
-        description: "Comprehensive smartphone security guide with 17 actionable protection strategies for both iPhone and Android. Learn to safeguard sensitive data like emails, photos, and location history from unauthorized access and digital threats.",
-        date: "March 14, 2025",
-        author: "Tom from Green Smartphones"
-    },
-    {//DELETE THIS
         id: 48,
         categories: [
             categories[0].sub[4]
         ],
-        link: "https://www.pcmag.com/archive/the-best-mobile-security-apps-295818",
-        title: "The Best Mobile Security Apps",
-        description: "Essential mobile security app guide for protecting your smartphone's sensitive data. Compare top solutions that safeguard against physical theft, remote attacks, unauthorized access, and even protection from your own security mistakes.",
-        date: "May 24, 2012",
-        author: "PCMag Staff"
+        link: "https://www.pcmag.com/picks/the-best-android-antivirus-apps?test_uuid=02LlF0iWKsilxYTJVF8uH5y&test_variant=A",
+        title: "The Best Android Antivirus for 2025",
+        description: "Expert reviews of 2025's best Android antivirus solutions from security testing veterans. Compare top-rated protection tools with advanced features to defend against malware, theft, and privacy invasions on your mobile devices.",
+        date: "April 9, 2025",
+        author: "Neil J. Rubenking"
     },
-    {//DELETE THIS
+    {
         id: 49,
         categories: [
             categories[2].sub[1]
         ],
-        link: "https://dnschecker.org/port-scanner.php",
-        title: "Online Port Checker",
-        description: "Free online network security assessment tool identifies open, closed, and filtered ports. Quickly detect potential vulnerabilities in your system's configuration to strengthen defenses against unauthorized network access.",
-        date: "",
-        author: "DNSChecker.org"
+        link: "https://www.upguard.com/blog/best-open-port-scanners",
+        title: "Top 5 Free Open Port Check Tools in 2025",
+        description: "Compare 2025's best free open port scanners for identifying network vulnerabilities. Essential security tools to detect exposed services, prevent ransomware attacks, and protect against data breaches through comprehensive port monitoring.",
+        date: "January 2, 2025",
+        author: "Edward Kost"
     },
-    {//DELETE THIS
+    {
         id: 50,
         categories: [
             categories[2].sub[1]
         ],
-        link: "https://www.rapid7.com/blog/post/2013/01/29/security-flaws-in-universal-plug-and-play-unplug-dont-play/",
-        title: "Security Flaws in Universal Plug and Play: Unplug, Don't Play",
-        description: "Critical UPnP vulnerability research exposes 80+ million devices to remote attacks. Learn about the widespread SDK flaws allowing remote code execution via single UDP packets and how to protect your network infrastructure.",
-        date: "January 29, 2013",
-        author: "HD Moore"
+        link: "https://www.upguard.com/blog/what-is-upnp",
+        title: "What is UPnP? Yes, It's Still Dangerous in 2025",
+        description: "Critical UPnP security analysis for 2025: Understand persistent risks in this convenient but vulnerable network protocol. Learn how automatic port forwarding threatens network security and implement safer configuration alternatives.",
+        date: "January 2, 2025",
+        author: "Edward Kost"
     },
-    {//DELETE THIS
+    {
         id: 51,
         categories: [
             categories[2].sub[1]
         ],
-        link: "https://www.metasploit.com/",
-        title: "The world's most used penetration testing framework",
-        description: "Industry-standard penetration testing framework used by security professionals worldwide. Empower your security team with advanced vulnerability verification tools, assessment capabilities and security awareness resources.",
-        date: "",
-        author: "RAPID Metasploit"
+        link: "https://www.breachlock.com/resources/blog/pentesting-frameworks-methodologies-and-why-they-are-important/",
+        title: "Pentesting Frameworks & Methodologies and Why They're Important",
+        description: "Essential penetration testing frameworks explained: Maximize cybersecurity effectiveness through structured ethical hacking methodologies. Compare key approaches for identifying and remediating system vulnerabilities before attackers exploit them.",
+        date: "April 24, 2024",
+        author: "Ann Chesbrough"
     },
-    {//DELETE THIS
+    {
         id: 52,
         categories: [
             categories[2].sub[1]
         ],
-        link: "https://www.comparitech.com/net-admin/metasploit-cheat-sheet/",
-        title: "Metasploit Cheat Sheet",
-        description: "Essential Metasploit command reference for security professionals. Master this leading penetration testing framework with our comprehensive guide to vulnerability identification, verification, and security assessment functionality.",
-        date: "November 15, 2024",
-        author: "Tim Keary"
+        link: "https://www.esecurityplanet.com/networks/pentest-framework/",
+        title: "What Is a Pentest Framework? Top 7 Frameworks Explained",
+        description: "Top 7 penetration testing frameworks compared: Choose the optimal standardized methodology for identifying security vulnerabilities. Essential guide to structured pentesting approaches for diverse network and compliance environments.",
+        date: "July 5, 2023",
+        author: "Shelby Hiter"
     },
-    {//DELETE THIS
+    {
         id: 53,
         categories: [
             categories[2].sub[1]
         ],
-        link: "https://www.openvas.org/",
-        title: "Greenbone OpenVAS",
-        description: "Comprehensive open-source vulnerability scanner with advanced detection capabilities. Features authenticated and unauthenticated testing across multiple protocols with daily security feed updates for thorough security assessment.",
-        date: "",
-        author: "OpenVAS"
-    },
-    {//DELETE THIS
-        id: 54,
-        categories: [
-            categories[1].sub[2],
-            categories[2].sub[0],
-            categories[2].sub[1]
-        ],
-        link: "https://lifehacker.com/how-to-portscan-your-computer-for-security-holes-198946",
-        title: "How to portscan your computer for security holes",
-        description: "Learn to identify network security vulnerabilities with port scanning tools. Protect your system from unauthorized access by detecting and closing open ports that could serve as entry points for malicious attackers.",
-        date: "September 7, 2006",
-        author: "Gina Trapani"
+        link: "https://www.balbix.com/insights/what-to-know-about-vulnerability-scanning-and-tools/",
+        title: "The Best Vulnerability Scanner Tools",
+        description: "Vulnerability scanning is a key component of any effective cybersecurity strategy. It involves automated processes to detect software, systems, and network vulnerabilities, allowing organizations to patch security gaps before cybercriminals exploit them.",
+        date: "January 16, 2025",
+        author: "Terry Olaes"
     },
     {
         id: 55,
@@ -676,18 +564,18 @@ var article = [
         date: "September 25, 2024",
         author: "Anthony Pell"
     },
-    {//DELETE THIS
+    {
         id: 57,
         categories: [
             categories[0].sub[0],
             categories[1].sub[2],
             categories[2].sub[0]
         ],
-        link: "https://www.acunetix.com/blog/web-security-zone/the-email-that-hacks-you/",
-        title: "The Email That Hacks You",
-        description: "Urgent router security warning: Learn how malicious emails can compromise Asus routers with default credentials. Discover how attackers manipulate DNS servers through simple email previews and implement essential router protection.",
-        date: "November 27, 2012",
-        author: "Bogdan Calin"
+        link: "https://us.norton.com/blog/privacy/how-to-tell-if-someone-hacked-your-routers",
+        title: "How to tell if someone hacked your router: 10 warning signs",
+        description: "Ten critical signs your router has been compromised by hackers. Learn to identify suspicious network behavior, implement effective protection measures, and restore security to your home network's most vulnerable entry point.",
+        date: "June 14, 2023",
+        author: "Claire Stouffer"
     },
     {
         id: 58,
@@ -702,33 +590,19 @@ var article = [
         date: "October 27, 2023",
         author: "Chris Hoffman, Et al."
     },
-    {//DELETE THIS
+    {
         id: 59,
         categories: [
             categories[0].sub[0],
             categories[1].sub[0],
             categories[1].sub[1]
         ],
-        link: "https://www2.superantispyware.com/",
-        title: "Antispyware to Protect Your PC",
-        description: "Comprehensive malware protection solution that defends against spyware, ransomware, trojans, and keyloggers. Enhance Windows Defender with specialized detection capabilities for complete system security.",
-        date: "",
-        author: "SUPERAntiSpyware"
-    },
-    {//DELETE THIS
-        id: 60,
-        categories: [
-            categories[0].sub[0],
-            categories[1].sub[0],
-            categories[1].sub[1]
-        ],
-        link: "http://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/security_hardening/index",
-        title: "Enhancing security of Red Hat Enterprise Linux 9 systems",
-        description: "Comprehensive Linux security hardening guide for enterprise environments. Learn system protection strategies against local and remote intrusions with proven techniques for securing servers and workstations in varied deployment scenarios.",
-        date: "",
-        author: "Red Hat Customer Content Services"
+        link: "https://www.pcmag.com/picks/the-best-spyware-protection-security-software?test_uuid=02LlF0iWKsilxYTJVF8uH5y&test_variant=A",
+        title: "The Best Antispyware Software for 2025",
+        description: "2025's best antispyware solutions reviewed: Protect against surveillance, data theft, and privacy violations with these top-rated security tools. Compare leading options for comprehensive digital defense against modern spyware threats.",
+        date: "March 10, 2025",
+        author: "Neil J. Rubenking"
     }
-
 ];
 /*var categories = [
     {
