@@ -8,7 +8,18 @@
 </head>
 <body>
     <div id="navbar-plh"></div>
-    <div id="search-verify"></div>
+    <div class="search-result-bar">
+        <div id="search-verify"></div>
+        <div id="sort-options">
+            <label for="sort-select">Sort by: </label>
+            <select id="sort-select">
+                <option value="relevance" selected>Relevance</option>
+                <option value="date-asc">Date (oldest to newest)</option>
+                <option value="date-desc">Date (newest to oldest)</option>
+            </select>
+        </div>
+    </div>
+    
     <hr>
     <div id="searchContainer"></div>
     <div id="footer-plh"></div>

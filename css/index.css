@@ -334,6 +334,48 @@ form{
     text-align: center;
     color:var(--background);
 }
+.search-result-bar{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    height:100px;
+}
+#sort-options, #sort-options label, #sort-options select{
+    margin: 0px;
+    padding:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:"poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size:var(--h3PhoneSize);
+    color: var(--hText);
+}
+#sort-options{
+    width:350px;
+    position:absolute;
+    right: calc(50vw - (350px / 2));
+    z-index: 1000;
+    top:50px;
+    margin: var(--closewidth) 0px;
+}
+#sort-options label{
+    width:100px;
+}
+#sort-options select{
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: var(--background);
+    color: var(--hText);
+    border: 2px solid var(--links);
+}
 @media screen and (min-width: 600px) {
     .core-nav{
         flex-direction: row;
@@ -416,6 +458,15 @@ form{
     }
 }
 @media screen and (min-width: 1025px) {
+    .search-result-bar{
+        flex-direction: row;
+        height:max-content;
+    }
+    #sort-options{
+        right: var(--closewidth);
+        top: 0px;
+
+    }
     .core-nav{
         width:100%;
     }
