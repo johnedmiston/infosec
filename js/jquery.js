@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Footer loaded successfully");
         document.dispatchEvent(new Event("footerLoaded"));
     });
+    
 });
 
     

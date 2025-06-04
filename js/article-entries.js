@@ -1,31 +1,34 @@
 var categories = [
     {                                       // categories[0]
-        name: 'Family',
+        name: 'Protect Your Family',
+        description: "Discover family internet safety strategies to protect your digital household.",
         sub: [
              "General Online Safety",       // categories[0].sub[0]
              "Identity Theft and Fraud",    // categories[0].sub[1]
              "Children and Teens",          // categories[0].sub[2]
              "The Elderly",                 // categories[0].sub[3]
-             "Cell Phone Safety"            // categories[0].sub[4]
+             "Cell Phone Safety",           // categories[0].sub[4]
+             "Monitoring Children"          // categories[0].sub[5]
         ]
     },
     {                                       // categories[1]
-        name: 'Church',
+        name: "Protect Your Church",
+        description: "Church online protection resources to safeguard your congregation\'s information.",
         sub: [
             "Church Computers",             // categories[1].sub[0]
             "Protecting Info",              // categories[1].sub[1]
-            "Protecting Church WiFi"        // categories[1].sub[2]     
+            "Protecting Church WiFi"        // categories[1].sub[2]    
         ]
     },
     {                                       // categories[2]    
-        name: 'Business',
+        name: "Protect Your Business",
+        description: "Implement cybersecurity strategies for your Christian-Owned Business, Organization, or Ministry.",
         sub: [
-            "WiFi Security",                // categories[2].sub[0]
+            "WiFi Security",                 // categories[2].sub[0]
             "Cybersecurity"                 // categories[2].sub[1]
         ]
-    }   
+    }
 ];
-/*do not change anything above this line, it is used to generate the categories in the code.*/
 var article = [
      {
         id: 0,
@@ -471,6 +474,17 @@ var article = [
         description: "Seven expert strategies to prevent smartphone hacking for business and personal users. Essential security practices to protect sensitive data, prevent network infiltration, and secure dual-purpose devices against sophisticated threats.",
         date: "March 14, 2024",
         author: "Amy Bunn"
+    },
+    {
+        id: 47,
+        categories: [
+            categories[0].sub[4]
+        ],
+        link: "https://greensmartphones.com/blog/how-to-keep-your-smartphone-secure/",
+        title: "How To Keep Your Phone Secure",
+        description: "Comprehensive smartphone security guide with 17 actionable protection strategies for both iPhone and Android. Learn to safeguard sensitive data like emails, photos, and location history from unauthorized access and digital threats.",
+        date: "March 14, 2025",
+        author: "Tom from Green Smartphones"
     },
     {
         id: 48,

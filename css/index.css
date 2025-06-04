@@ -212,21 +212,22 @@ nav.nav{
     display: none;
 	height:max-content;
 }
-.menu-item{
-    display: flex;
-    justify-content: center;
-}
+
 .dd-text{
     display:none;
     color:rgba(0,0,0,1.00);
 }
-.menu-item h3{
+#dd-menu h3{
     padding:5px 5px 5px 0px;
 }
 .dd-text h3{
     text-align:left;
 }
-.dd-menu a{
+#dd-menu{
+    display: flex;
+    flex-direction: column;
+}
+#dd-menu a{
     display:none;
     font-family: "poppins", sans-serif;
     font-optical-sizing: auto;
@@ -236,10 +237,10 @@ nav.nav{
     margin:0px;
     text-decoration: none;
 }
-.dd-menu a .menu-item h3{
+#dd-menu a h3{
     position:relative
 }
-.dd-menu a .menu-item h3::before{
+#dd-menu a h3::before{
     content: "";
     position: absolute;
     bottom: 10px;
@@ -255,11 +256,11 @@ nav.nav{
     -ms-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
 }
-.dd-menu a .menu-item h3::before{
+#dd-menu a h3::before{
     bottom: 4px;
     background-color: var(--background);
 }
-.dd-menu a:hover::before, .dd-menu a .menu-item h3:hover::before {
+#dd-menu a:hover::before, #dd-menu a h3:hover::before {
     visibility: visible;
     transform: scaleX(1);
     color: white;
@@ -282,7 +283,7 @@ nav.nav{
     padding:15px;
     margin: var(--closewidth) 0px 0px 0px;
 }
-.dropdown.dd-selected .dropdown-content,.dropdown.dd-selected .dropdown-content .dd-text, .dropdown.dd-selected .dd-menu a{
+.dropdown.dd-selected .dropdown-content,.dropdown.dd-selected .dropdown-content .dd-text, .dropdown.dd-selected #dd-menu a{
     display:block;
 }
 form{
@@ -400,7 +401,7 @@ form{
         -ms-border-radius: 0px 15px 15px 15px;
         -o-border-radius: 0px 15px 15px 15px;
 }
-    .dropdown .dd-text, .dd-menu a{
+    .dropdown .dd-text, #dd-menu a{
         width:50%;
     }
     .dropdown.dd-selected{
@@ -428,12 +429,9 @@ form{
        -o-border-radius: 15px;
 }
 
-    .dropdown span, .dd-menu a{
+    .dropdown span, #dd-menu a{
         font-size: var(--h3TabletSize);
         text-align: left;
-    }
-    .dd-menu.donate a span{
-        text-align: center;
     }
     .dropdown.dd-selected .whitespan span{
         background-color: rgba(0,0,0,0.00);
@@ -446,7 +444,7 @@ form{
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
     }
-    .dd-menu a{
+    #dd-menu a{
         width:100%;
     }
     .form{
