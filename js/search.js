@@ -8,6 +8,42 @@ function validateForm() {
 var keyword = validateForm();
 console.log("Keyword: " + keyword);
 
+// Check if keyword is "ALL" and update sort dropdown accordingly
+if (keyword === "ALL") {
+    document.addEventListener('DOMContentLoaded', function() {
+        const sortSelect = document.getElementById('sort-select');
+        if (sortSelect) {
+            // Clear existing options
+            sortSelect.innerHTML = '';
+            
+            // Add new ID-based sorting options
+            const idAscOption = document.createElement('option');
+            idAscOption.value = 'id-asc';
+            idAscOption.textContent = 'ID (ascending)';
+            idAscOption.selected = true;
+            
+            const idDescOption = document.createElement('option');
+            idDescOption.value = 'id-desc';
+            idDescOption.textContent = 'ID (descending)';
+            
+            sortSelect.appendChild(idAscOption);
+            sortSelect.appendChild(idDescOption);
+            
+            // Keep the date options
+            const dateAscOption = document.createElement('option');
+            dateAscOption.value = 'date-asc';
+            dateAscOption.textContent = 'Date (oldest to newest)';
+            
+            const dateDescOption = document.createElement('option');
+            dateDescOption.value = 'date-desc';
+            dateDescOption.textContent = 'Date (newest to oldest)';
+            
+            sortSelect.appendChild(dateAscOption);
+            sortSelect.appendChild(dateDescOption);
+        }
+    });
+}
+
 document.title = keyword + " - Information Security Links";
 
 // Function to parse date strings into Date objects
@@ -42,37 +78,64 @@ function findArticles(findKeyword, sortMethod = 'relevance') {
     // Initialize results array OUTSIDE the loop
     var articleResults = [];
     
-    // Iterate through all articles
-    var maxId = Math.max(...article.map(o => o.id))
-    // Process articles
-    for (var i = 0; i <= maxId; i++) {
-        const currentArticle = article.find(a => a.id === i);
-        if (currentArticle) {
-            const title = currentArticle.title || '';
-            const description = currentArticle.description || '';
-            
-            // Count occurrences in title and description
-            const titleCount = countOccurrences(title, findKeyword);
-            const descriptionCount = countOccurrences(description, findKeyword);
-            const totalCount = titleCount + descriptionCount;
-            
-            // Only add articles that contain the keyword at least once
-            if (totalCount > 0) {
+    // Check if keyword is "ALL" - if so, return all articles
+    if (findKeyword === "ALL") {
+        // Get all articles
+        var maxId = Math.max(...article.map(o => o.id));
+        for (var i = 0; i <= maxId; i++) {
+            const currentArticle = article.find(a => a.id === i);
+            if (currentArticle) {
                 articleResults.push({
                     id: currentArticle.id,
                     link: currentArticle.link,
-                    title: title,
-                    description: description,
+                    title: currentArticle.title || '',
+                    description: currentArticle.description || '',
                     date: currentArticle.date,
                     author: currentArticle.author,
-                    count: totalCount
+                    count: 0 // Not relevant for ALL search
                 });
+            }
+        }
+    } else {
+        // Original search logic for specific keywords
+        var maxId = Math.max(...article.map(o => o.id));
+        for (var i = 0; i <= maxId; i++) {
+            const currentArticle = article.find(a => a.id === i);
+            if (currentArticle) {
+                const title = currentArticle.title || '';
+                const description = currentArticle.description || '';
+                
+                // Count occurrences in title and description
+                const titleCount = countOccurrences(title, findKeyword);
+                const descriptionCount = countOccurrences(description, findKeyword);
+                const totalCount = titleCount + descriptionCount;
+                
+                // Only add articles that contain the keyword at least once
+                if (totalCount > 0) {
+                    articleResults.push({
+                        id: currentArticle.id,
+                        link: currentArticle.link,
+                        title: title,
+                        description: description,
+                        date: currentArticle.date,
+                        author: currentArticle.author,
+                        count: totalCount
+                    });
+                }
             }
         }
     }
     
     // Sort based on selected method
     switch(sortMethod) {
+        case 'id-asc':
+            // Sort by ID in ascending order
+            articleResults.sort((a, b) => a.id - b.id);
+            break;
+        case 'id-desc':
+            // Sort by ID in descending order
+            articleResults.sort((a, b) => b.id - a.id);
+            break;
         case 'date-asc':
             // Sort by date in ascending order (oldest first)
             articleResults.sort((a, b) => {
@@ -101,12 +164,23 @@ function findArticles(findKeyword, sortMethod = 'relevance') {
 
 // Display search results with the given sorting method
 function displaySearchResults(sortMethod = 'relevance') {
+    // For "ALL" search, default to id-asc if relevance is selected
+    if (keyword === "ALL" && sortMethod === 'relevance') {
+        sortMethod = 'id-asc';
+    }
+    
     // Execute the function and store the result
     const foundArticles = findArticles(keyword, sortMethod);
     
     // Update sort indicator in the heading
     let sortIndicator = "";
     switch(sortMethod) {
+        case 'id-asc':
+            sortIndicator = " (Sorted by ID: ascending)";
+            break;
+        case 'id-desc':
+            sortIndicator = " (Sorted by ID: descending)";
+            break;
         case 'date-asc':
             sortIndicator = " (Sorted by date: oldest first)";
             break;
@@ -118,7 +192,12 @@ function displaySearchResults(sortMethod = 'relevance') {
             break;
     }
     
-    document.getElementById("search-verify").innerHTML = "<h1>Search Results For: " + keyword + "</h1>";
+    // Update the heading based on whether it's an "ALL" search
+    if (keyword === "ALL") {
+        document.getElementById("search-verify").innerHTML = "<h1>All Articles</h1>";
+    } else {
+        document.getElementById("search-verify").innerHTML = "<h1>Search Results For: " + keyword + "</h1>";
+    }
     
     // Clear previous results
     $("#searchContainer").empty();
@@ -142,7 +221,25 @@ function displaySearchResults(sortMethod = 'relevance') {
                 var foundArticle = foundArticles[q];
                 var originalArticle = article.find(item => item.id === foundArticle.id);
                 if (originalArticle) {
-                    console.log('Match found: Article ID:' + originalArticle.id + ' has ' + foundArticle.count + ' keywords: ' + keyword);
+                    if (keyword === "ALL") {
+                        if(sortIndicator === " (Sorted by ID: ascending)") {
+                            console.log('Displaying article ID:' + originalArticle.id);
+                        } else if (sortIndicator === " (Sorted by ID: descending)") {
+                            console.log('Displaying article ID:' + originalArticle.id);
+                        } else if (sortIndicator === " (Sorted by date: oldest first)") {
+                            console.log('Displaying article with date: ' + originalArticle.date + ' (ID: ' + originalArticle.id + ')');
+                        } else if (sortIndicator === " (Sorted by date: newest first)") {
+                            console.log('Displaying article with date: ' + originalArticle.date + ' (ID: ' + originalArticle.id + ')');
+                        }
+                    } else {
+                        if(sortIndicator === " (Sorted by relevance)") {
+                            console.log('Match found for Article:' + originalArticle.id + ', it has ' + foundArticle.count + ' of the keyword: ' + keyword);
+                        } else if (sortIndicator === " (Sorted by date: oldest first)") {
+                            console.log('Match found for article with date: ' + originalArticle.date + ' (ID: ' + originalArticle.id + ')');
+                        } else if (sortIndicator === " (Sorted by date: newest first)") {
+                            console.log('Match found for article with date: ' + originalArticle.date + ' (ID: ' + originalArticle.id + ')');
+                        }
+                    }
                             
                     // Create a new card for each found article
                     var newCard = originalTemplate.clone();
@@ -157,6 +254,11 @@ function displaySearchResults(sortMethod = 'relevance') {
                     newCard.find('#card-link').html('<a href="' + articleObj.link + '" target="_blank">Open Page</a>');
                     newCard.find('#card-date').html('<p>' + articleObj.date + '</p>');
                     newCard.find('#card-author').html('<p>' + articleObj.author + '</p>');
+
+                    // Add this line to display ID when search is "ALL"
+                    if (keyword === "ALL") {
+                        newCard.find('#card-id').html('<h3>ID: ' + originalArticle.id + '</h3>');
+                    }
                 }
             }
         }
@@ -164,8 +266,9 @@ function displaySearchResults(sortMethod = 'relevance') {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Initial display with default sort (relevance)
-    displaySearchResults('relevance');
+    // Initial display with appropriate default sort
+    const defaultSort = keyword === "ALL" ? 'id-asc' : 'relevance';
+    displaySearchResults(defaultSort);
     
     // Add event listener for the sort dropdown
     document.querySelector('#sort-select').addEventListener('change', function() {

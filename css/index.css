@@ -92,6 +92,7 @@ p{
     font-size: var(--pSize);
     font-style: normal;
     color: var(--pText);
+    margin:0px;
 }
 li{
     font-family: "poppins", sans-serif;
@@ -539,17 +540,17 @@ form{
     margin-bottom: var(--gridwidth);
 }
 #card-header{
-    height: 40px;
+    height: 60px;
     margin-bottom: var(--gridwidth);
 }
 .card-subheader{
     display:flex;
     margin-bottom: var(--closewidth);
     margin-left: 0px;
+    height:70px;
 }
 #card-author{
-    display:flex;
-    margin: 0;
+    display:flex;    
 }
 #card-date p{
     text-align: right;
@@ -585,6 +586,12 @@ form{
     }
     #card-text{
         height:150px;
+    }
+    
+}
+@media screen and (min-width: 1025px) {
+    #card-author{
+        width:250px;
     }
     
 }
