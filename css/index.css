@@ -579,6 +579,15 @@ form{
     font-style: normal;
     font-size:var(--h3PhoneSize);
 }
+.no-results-container{
+    margin:var(--gridwidth);
+    text-align:center;
+    height: 65vh;
+}
+img.zero-img{
+    width:80vw;
+    max-width: 300px;
+}
 @media screen and (min-width: 600px) {
     .card{
        width: 480px;
@@ -593,7 +602,9 @@ form{
     #card-author{
         width:250px;
     }
-    
+    img.zero-img{
+        max-width: 400px;
+    }
 }
 /*cards end*/
 /*welcome page start*/
@@ -702,7 +713,7 @@ form{
     text-decoration: none;
     font-size:var(--h3PhoneSize);
     height:50px;
-    margin: 0 var(--gridwidth);
+    margin: 0 var(--closewidth);
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;

@@ -205,6 +205,28 @@ function displaySearchResults(sortMethod = 'relevance') {
     // Optional: Display the result in console
     console.log(foundArticles);
 
+    // Check if no results were found
+if (foundArticles.length === 0) {
+    // Clear the search container
+    $("#searchContainer").empty();
+    
+    // Create a no-results message
+    const noResultsHTML = `
+        <div class="no-results-container">
+            <img class="zero-img" src="/img/zero-results.png" alt="There were no results found" />
+            <h1>No results found</h1>
+            <h3>We couldn't find any articles matching "<strong>${keyword}</strong>"</h3>
+        </div>
+    `;
+    
+    // Display the no-results message
+    $("#searchContainer").html(noResultsHTML);
+    
+    // Exit the function early since there are no results to process
+    return;
+}
+
+
     $.ajax({
         url: "/html/elements/cards.html",
         async: false,
