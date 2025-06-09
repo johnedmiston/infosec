@@ -550,7 +550,8 @@ form{
     height:70px;
 }
 #card-author{
-    display:flex;    
+    display:flex;
+    margin-left:0px;    
 }
 #card-date p{
     text-align: right;
@@ -588,6 +589,17 @@ img.zero-img{
     width:80vw;
     max-width: 300px;
 }
+#card-id{
+    height:100px;
+}
+.h3-red{
+    color:red;
+    text-shadow:2px 2px 10px rgba(0, 0, 0, 1.00);
+}
+#card-cat{
+    margin:0 var(--gridwidth) var(--gridwidth) 0;
+    height: 180px;
+}
 @media screen and (min-width: 600px) {
     .card{
        width: 480px;
@@ -601,7 +613,7 @@ img.zero-img{
 @media screen and (min-width: 1025px) {
     #card-author{
         width:250px;
-    }
+    }    
     img.zero-img{
         max-width: 400px;
     }

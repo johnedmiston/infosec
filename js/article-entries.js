@@ -89,8 +89,6 @@ var article = [
         id: 4,
         categories: [
             categories[0].sub[1],
-            categories[1].sub[1],
-            categories[2].sub[1]
         ],
         link: "https://www.capitalone.com/learn-grow/privacy-security/credit-card-skimmers/",
         title: "How to spot and avoid credit card skimmers",
@@ -102,6 +100,7 @@ var article = [
         id: 5,
         categories: [
             categories[0].sub[0],
+            categories[0].sub[5],
             categories[1].sub[1]
         ],
         link: "https://onlinemasteroflegalstudies.com/resources/how-parents-educators-protect-childrens-online-privacy/",
@@ -114,6 +113,7 @@ var article = [
         id: 6,
         categories: [
             categories[0].sub[0],
+            categories[0].sub[5],
             categories[1].sub[1]
         ],
         link: "https://www.mytutor.co.uk/blog/parents/the-parents-guide-to-teaching-your-teen-online-safety/",
@@ -126,7 +126,6 @@ var article = [
         id: 7,
         categories: [
             categories[0].sub[0],
-            categories[0].sub[2],
             categories[2].sub[1]
         ],
         link: "https://www.cloudshare.com/blog/cybersecurity-practice-labs/#:~:text=CloudShare%20and%20Immersive%20Labs%20are,free%20practice%20with%20OWASP%20vulnerabilities.",
@@ -138,7 +137,8 @@ var article = [
     {
         id: 8,
         categories: [
-            categories[0].sub[3]
+            categories[0].sub[3],
+            categories[0].sub[2],
         ],
         link: "https://www.aarp.org/home-family/personal-technology/info-2024/digital-money-tools-apps.html",
         title: "Your Guide to the Latest Digital Money Tools",
@@ -151,6 +151,7 @@ var article = [
         categories: [
             categories[0].sub[0],
             categories[0].sub[2],
+            categories[0].sub[5],
         ],
         link: "https://www.unicef.org/stories/how-to-stop-cyberbullying",
         title: "Cyberbullying: A Guide to Internet and Computer Safety",
@@ -289,8 +290,7 @@ var article = [
         id: 20,
         categories: [
             categories[0].sub[0],
-            categories[0].sub[6],
-            categories[0].sub[1]
+            categories[0].sub[6]
         ],
         link: "https://www.willowtreeapps.com/craft/ai-hallucination-detection",
         title: "Detecting AI Hallucination Risk Using a CIA Technique",
@@ -362,7 +362,6 @@ var article = [
         id: 26,
         categories: [
             categories[0].sub[0],
-            categories[0].sub[2],
             categories[1].sub[2]
         ],
         link: "https://matthewdbill.medium.com/top-privacy-tools-for-2024-e855e01b8027",
@@ -435,7 +434,7 @@ var article = [
         id: 32,
         categories: [
             categories[0].sub[0],
-            categories[1].sub[6],
+            categories[0].sub[6],
             categories[1].sub[1]
         ],
         link: "https://www.technologyreview.com/2022/12/19/1065596/how-to-spot-ai-generated-text/",
@@ -475,7 +474,7 @@ var article = [
         categories: [
             categories[0].sub[0],
             categories[1].sub[1],
-            categories[2].sub[1]
+            categories[0].sub[6]
         ],
         link: "https://www.pcmag.com/articles/how-to-detect-ai-created-images",
         title: "Can You Spot AI-Generated Images? Take Our Quiz to Test Your Skills",
@@ -499,7 +498,8 @@ var article = [
         id: 37,
         categories: [
             categories[0].sub[0],
-            categories[0].sub[6]
+            categories[0].sub[6],
+            categories[1].sub[1]
         ],
         link: "https://www.pcmag.com/how-to/how-to-detect-ai-generated-video-footage",
         title: "Don't Get Duped! Here's How to Spot AI-Generated Video Footage",

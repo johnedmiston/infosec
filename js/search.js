@@ -167,6 +167,7 @@ function displaySearchResults(sortMethod = 'relevance') {
     // For "ALL" search, default to id-asc if relevance is selected
     if (keyword === "ALL" && sortMethod === 'relevance') {
         sortMethod = 'id-asc';
+        console.log('Displaying every article');
     }
     
     // Execute the function and store the result
@@ -225,66 +226,84 @@ if (foundArticles.length === 0) {
     // Exit the function early since there are no results to process
     return;
 }
+function isDateOlderThanCutoff(dateString) {
+  const inputDate = new Date(dateString);
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const cutoffYear = currentYear - 7; // Set cutoff to 5 years ago
+  const cutoffDate = new Date(cutoffYear, 0, 1); // January 1st of the current year
 
+  return inputDate >= cutoffDate; // Return true if the input date is at least 8 years older than the cutoff
+}
 
-    $.ajax({
-        url: "/html/elements/cards.html",
-        async: false,
-        success: function(data) {
-            $("#searchContainer").html(data);
-            var template = $("#searchContainer").children();
-            var originalTemplate = template.clone();
-            
-            // Clear the container to remove the template
-            $("#searchContainer").empty();
-            
-            // Process articles
-            for (var q = 0; q < foundArticles.length; q++) {
-                var foundArticle = foundArticles[q];
-                var originalArticle = article.find(item => item.id === foundArticle.id);
-                if (originalArticle) {
-                    if (keyword === "ALL") {
-                        if(sortIndicator === " (Sorted by ID: ascending)") {
-                            console.log('Displaying article ID:' + originalArticle.id);
-                        } else if (sortIndicator === " (Sorted by ID: descending)") {
-                            console.log('Displaying article ID:' + originalArticle.id);
-                        } else if (sortIndicator === " (Sorted by date: oldest first)") {
-                            console.log('Displaying article with date: ' + originalArticle.date + ' (ID: ' + originalArticle.id + ')');
-                        } else if (sortIndicator === " (Sorted by date: newest first)") {
-                            console.log('Displaying article with date: ' + originalArticle.date + ' (ID: ' + originalArticle.id + ')');
-                        }
-                    } else {
-                        if(sortIndicator === " (Sorted by relevance)") {
-                            console.log('Match found for Article:' + originalArticle.id + ', it has ' + foundArticle.count + ' of the keyword: ' + keyword);
-                        } else if (sortIndicator === " (Sorted by date: oldest first)") {
-                            console.log('Match found for article with date: ' + originalArticle.date + ' (ID: ' + originalArticle.id + ')');
-                        } else if (sortIndicator === " (Sorted by date: newest first)") {
-                            console.log('Match found for article with date: ' + originalArticle.date + ' (ID: ' + originalArticle.id + ')');
-                        }
-                    }
-                            
-                    // Create a new card for each found article
-                    var newCard = originalTemplate.clone();
-                    newCard.addClass("id" + originalArticle.id);
-                    $("#searchContainer").append(newCard);
-                    var articleObj = originalArticle;
+$.ajax({
+    url: "/html/elements/cards.html",
+    async: false,
+    success: function(data) {
+        $("#searchContainer").html(data);
+        var template = $("#searchContainer").children();
+        var originalTemplate = template.clone();
+        
+        // Clear the container to remove the template
+        $("#searchContainer").empty();
+        
+        // Process articles
+        for (var q = 0; q < foundArticles.length; q++) {
+            var foundArticle = foundArticles[q];
+            var originalArticle = article.find(item => item.id === foundArticle.id);
+            if (originalArticle) {
+                if (keyword === "ALL") {
+                    if(sortIndicator === " (Sorted by ID: ascending)") {
+                        console.log('Displaying article ID:' + originalArticle.id);
+                    } else if (sortIndicator === " (Sorted by ID: descending)") {
+                        console.log('Displaying article ID:' + originalArticle.id);
+                    } else if (sortIndicator === " (Sorted by date: oldest first)") {
+                        console.log('Displaying article with date: ' + originalArticle.date + ' (ID: ' + originalArticle.id + ')');
+                    } else if (sortIndicator === " (Sorted by date: newest first)") {
+                        console.log('Displaying article with date: ' + originalArticle.date + ' (ID: ' + originalArticle.id + ')');
+                    };
+                } else {
+                    if(sortIndicator === " (Sorted by relevance)") {
+                        console.log('Match found for Article:' + originalArticle.id + ', it has ' + foundArticle.count + ' of the keyword: ' + keyword);
+                    } else if (sortIndicator === " (Sorted by date: oldest first)") {
+                        console.log('Match found for article with date: ' + originalArticle.date + ' (ID: ' + originalArticle.id + ')');
+                    } else if (sortIndicator === " (Sorted by date: newest first)") {
+                        console.log('Match found for article with date: ' + originalArticle.date + ' (ID: ' + originalArticle.id + ')');
+                    };
+                };
+                        
+                // Create a new card for each found article
+                var newCard = originalTemplate.clone();
+                newCard.addClass("id" + originalArticle.id);
+                $("#searchContainer").append(newCard);
+                var articleObj = originalArticle;
 
-                    // IMMEDIATELY POPULATE THIS CARD
-                    newCard.find('#card-image').html('<img src="/img/articles/' + originalArticle.id + '.png" alt="' + articleObj.title + '">');
-                    newCard.find('#card-header').html('<h1>' + articleObj.title + '</h1>');
-                    newCard.find('#card-text').html('<p>' + articleObj.description + '</p>');
-                    newCard.find('#card-link').html('<a href="' + articleObj.link + '" target="_blank">Open Page</a>');
-                    newCard.find('#card-date').html('<p>' + articleObj.date + '</p>');
-                    newCard.find('#card-author').html('<p>' + articleObj.author + '</p>');
+                // IMMEDIATELY POPULATE THIS CARD
+                newCard.find('#card-image').html('<img src="/img/articles/' + originalArticle.id + '.png" alt="' + articleObj.title + '">');
+                newCard.find('#card-header').html('<h1>' + articleObj.title + '</h1>');
+                newCard.find('#card-text').html('<p>' + articleObj.description + '</p>');
+                newCard.find('#card-link').html('<a href="' + articleObj.link + '" target="_blank">Open Page</a>');
+                newCard.find('#card-date').html('<p>' + articleObj.date + '</p>');
+                newCard.find('#card-author').html('<p>' + articleObj.author + '</p>');
 
-                    // Add this line to display ID when search is "ALL"
-                    if (keyword === "ALL") {
+                // Add this line to display ID when search is "ALL"
+                if (keyword === "ALL") {
+                    if (!isDateOlderThanCutoff(originalArticle.date)){
+                        newCard.find('#card-id').html('<h3>ID: ' + originalArticle.id + '</h3> <h3 class="h3-red">This article is older than 8 years and may not be relevant.</h3>');
+                    } else{
                         newCard.find('#card-id').html('<h3>ID: ' + originalArticle.id + '</h3>');
                     }
-                }
-            }
-        }
-    });
+                    
+                    categoriesNewCard = "<h3>Categories:</h3>";
+                    for (let i = 0; i < originalArticle.categories.length; i++) {
+                        categoriesNewCard += '<h3 class="card-category">' + originalArticle.categories[i] + '</h3>';
+                    };
+                    newCard.find('#card-cat').html(categoriesNewCard);
+                };
+            };
+        };
+    }
+});
 }
 
 document.addEventListener('DOMContentLoaded', function() {
