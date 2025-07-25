@@ -589,14 +589,14 @@ img.zero-img{
     width:80vw;
     max-width: 300px;
 }
-#card-id{
+.card.all #card-id{
     height:100px;
 }
 .h3-red{
     color:red;
     text-shadow:2px 2px 10px rgba(0, 0, 0, 1.00);
 }
-#card-cat{
+.card.all #card-cat{
     margin:0 var(--gridwidth) var(--gridwidth) 0;
     height: 180px;
 }

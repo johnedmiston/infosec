@@ -39,7 +39,7 @@ $.ajax({
                         newCard.find('#card-image').html('<img src="/img/articles/' + i + '.png" alt="' + articleId.title + '">');
                         newCard.find('#card-header').html('<h1>' + articleId.title + '</h1>');
                         newCard.find('#card-text').html('<p>' + articleId.description + '</p>');
-                        newCard.find('#card-link').html('<a href="' + articleId.link + '" target="_blank">Open Page</a>');
+                        newCard.find('#card-link').html('<a href="' + articleId.link + '" rel="noopener noreferrer" target="_blank">Open Page</a>');
                         newCard.find('#card-date').html('<p>' + articleId.date + '</p>');
                         newCard.find('#card-author').html('<p>' + articleId.author + '</p>');
 

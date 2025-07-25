@@ -28,7 +28,7 @@ document.addEventListener("navbarLoaded", function() {
                 newCat.find('.dd-text').html('<h3>' + category.description + '</h3>');
                 var subMenu = newCat.find('#dd-menu')[0]; // Changed to ID selector
                 for (var c = 0; c < category.sub.length; c++) { // Fixed array access
-                    subMenu.innerHTML += '<a href="/html/category.html?category=' + i + '&sub=' + c + '"><h3>' + category.sub[c] + '</h3></a>';
+                    subMenu.innerHTML += '<a href="/html/category.html?category=' + i + '&sub=' + c + '" rel="noopener noreferrer"><h3>' + category.sub[c] + '</h3></a>';
                 }
             }
         }

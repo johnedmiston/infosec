@@ -275,6 +275,9 @@ $.ajax({
                 // Create a new card for each found article
                 var newCard = originalTemplate.clone();
                 newCard.addClass("id" + originalArticle.id);
+                if(keyword=== "ALL"){
+                    newCard.addClass("all");
+                }
                 $("#searchContainer").append(newCard);
                 var articleObj = originalArticle;
 
@@ -282,7 +285,7 @@ $.ajax({
                 newCard.find('#card-image').html('<img src="/img/articles/' + originalArticle.id + '.png" alt="' + articleObj.title + '">');
                 newCard.find('#card-header').html('<h1>' + articleObj.title + '</h1>');
                 newCard.find('#card-text').html('<p>' + articleObj.description + '</p>');
-                newCard.find('#card-link').html('<a href="' + articleObj.link + '" target="_blank">Open Page</a>');
+                newCard.find('#card-link').html('<a href="' + articleObj.link + '" rel="noopener noreferrer" target="_blank">Open Page</a>');
                 newCard.find('#card-date').html('<p>' + articleObj.date + '</p>');
                 newCard.find('#card-author').html('<p>' + articleObj.author + '</p>');
 
