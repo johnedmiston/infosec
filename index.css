@@ -52,11 +52,11 @@
 /*Fonts*/
 @font-face {
 	font-family: 'poppins';
-	src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+	src: url('Poppins-Regular.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'poppins-header';
-	src: url('fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+	src: url('Poppins-Bold.ttf') format('truetype');
 }
 /*Element Defaults and Overrides*/
 html{
