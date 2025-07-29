@@ -214,7 +214,7 @@ if (foundArticles.length === 0) {
     // Create a no-results message
     const noResultsHTML = `
         <div class="no-results-container">
-            <img class="zero-img" src="/img/zero-results.png" alt="There were no results found" />
+            <img class="zero-img" src="img/zero-results.png" alt="There were no results found" />
             <h1>No results found</h1>
             <h3>We couldn't find any articles matching "<strong>${keyword}</strong>"</h3>
         </div>
