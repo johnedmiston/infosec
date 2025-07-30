@@ -237,7 +237,7 @@ function isDateOlderThanCutoff(dateString) {
 }
 
 $.ajax({
-    url: "/cards.html",
+    url: "cards.html",
     async: false,
     success: function(data) {
         $("#searchContainer").html(data);
