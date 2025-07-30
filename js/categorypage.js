@@ -10,7 +10,7 @@ document.title = targetCategory + " - Information Security Links";
 
 // Use this alternative approach to avoid nesting everything in a callback
 $.ajax({
-    url: "/html/elements/cards.html",
+    url: "cards.html",
     async: false,
     success: function(data) {
         $("#cardContainer").html(data);
@@ -36,7 +36,7 @@ $.ajax({
                         $("#cardContainer").append(newCard);
 
                         // IMMEDIATELY POPULATE THIS CARD
-                        newCard.find('#card-image').html('<img src="/img/articles/' + i + '.png" alt="' + articleId.title + '">');
+                        newCard.find('#card-image').html('<img src="img/articles/' + i + '.png" alt="' + articleId.title + '">');
                         newCard.find('#card-header').html('<h1>' + articleId.title + '</h1>');
                         newCard.find('#card-text').html('<p>' + articleId.description + '</p>');
                         newCard.find('#card-link').html('<a href="' + articleId.link + '" rel="noopener noreferrer" target="_blank">Open Page</a>');
