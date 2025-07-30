@@ -20,9 +20,9 @@ document.addEventListener('navbarLoaded', function() {
             
             // Redirect to the search page if we have a query
             if (searchQuery) {
-                console.log("Redirecting search to: /html/search.html");
+                console.log("Redirecting search to: search.html");
                 // Force navigation to the search page
-                window.location.href = "/html/search.html?q=" + encodeURIComponent(searchQuery);
+                window.location.href = "search.html?q=" + encodeURIComponent(searchQuery);
                 return false;
             } else {
                 alert("Please enter search terms");
