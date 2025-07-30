@@ -237,7 +237,7 @@ function isDateOlderThanCutoff(dateString) {
 }
 
 $.ajax({
-    url: "/html/elements/cards.html",
+    url: "cards.html",
     async: false,
     success: function(data) {
         $("#searchContainer").html(data);
@@ -282,7 +282,7 @@ $.ajax({
                 var articleObj = originalArticle;
 
                 // IMMEDIATELY POPULATE THIS CARD
-                newCard.find('#card-image').html('<img src="/img/articles/' + originalArticle.id + '.png" alt="' + articleObj.title + '">');
+                newCard.find('#card-image').html('<img src="img/articles/' + originalArticle.id + '.png" alt="' + articleObj.title + '">');
                 newCard.find('#card-header').html('<h1>' + articleObj.title + '</h1>');
                 newCard.find('#card-text').html('<p>' + articleObj.description + '</p>');
                 newCard.find('#card-link').html('<a href="' + articleObj.link + '" rel="noopener noreferrer" target="_blank">Open Page</a>');
