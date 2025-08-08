@@ -11,7 +11,7 @@ document.title = targetCategory + " - Information Security Links";
 // Use this alternative approach to avoid nesting everything in a callback
 $.ajax({
     url: "cards.html",
-    async: false,
+    async: true,
     success: function(data) {
         $("#cardContainer").html(data);
         var template = $("#cardContainer").children();

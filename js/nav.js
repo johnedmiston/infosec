@@ -8,7 +8,7 @@ document.addEventListener("navbarLoaded", function() {
     }
     $.ajax({
     url: "dropdown.html",
-    async: false,
+    async: true,
     success: function(data) {
         $(".core-nav").html(data);
         var template = $(".core-nav").children();
