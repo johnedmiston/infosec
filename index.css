@@ -679,6 +679,9 @@ img.zero-img{
     padding:var(--closewidth);
 
 }
+.cont-text h1 {
+    height: 70px;
+}
 @media screen and (min-width: 1025px) {
     .jumbo{
         width:500px;
