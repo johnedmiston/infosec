@@ -54,7 +54,7 @@ var article = [
         link: "https://www.nsa.gov/portals/75/documents/what-we-do/cybersecurity/professional-resources/csi-nsas-top10-cybersecurity-mitigation-strategies.pdf",
         title: "NSA'S Top Ten Cybersecurity Mitigation Strategies",
         description: "Discover NSA's top-ranked cybersecurity strategies to defend against APT threats. Implement these prioritized, NIST-aligned tactics to enhance your organization's security posture, minimize attack impacts, and build effective defense-in-depth protection systems.",
-        date: "March 2018",
+        date: "March, 2018",
         author: "National Security Agency"
     },
     {
