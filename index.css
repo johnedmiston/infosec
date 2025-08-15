@@ -674,13 +674,18 @@ img.zero-img{
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
-.cont-text, .cont-text h1, .cont-text p{
+.cont-text, .cont-text .text-warn h1, .cont-text .text-warn h3, .cont-text p{
     color:var(--background);
     padding:var(--closewidth);
-
 }
 .cont-text h1 {
-    height: 70px;
+    height: max-content;
+}
+@media screen and (min-width: 600px) {
+   .cont-text .text-warn{
+    display:flex;
+    flex-direction: column;
+   }
 }
 @media screen and (min-width: 1025px) {
     .jumbo{
